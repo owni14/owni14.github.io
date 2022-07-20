@@ -4,6 +4,7 @@ title: '[일상] 어느덧 부트캠프 3주차'
 subtitle: '[일상] 어느덧 부트캠프 3주차'
 category: life
 tags: life
+published : false
 ---
 
 <!-- more -->

@@ -4,6 +4,7 @@ title: '[개발] Github 블로그 세팅이 완료! Velog 에서 옮긴 이유?'
 subtitle: '[개발] Github 블로그 세팅이 완료! Velog 에서 옮긴 이유?'
 category: life
 tags: life
+published : false
 ---
 [테마]:http://jekyllthemes.org/
 [velog]:https://velog.io/

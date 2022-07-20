@@ -2,6 +2,6 @@
 layout: list
 title: Posts
 description: >
-  블로그의 모든 포스트 들입니다.
+  All of the posts in the blog
 grouped: true
 ---
