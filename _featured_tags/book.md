@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: TIL
-slug: til
-category: studylog
+title: Book
+slug: book
+category: life
 sidebar: true
 description: >
-  Today I learned
+  What did I read books.
 ---

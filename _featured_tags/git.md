@@ -4,7 +4,7 @@ type: tag
 title: Git
 slug: git
 category: devlog
-sidebar: false
+sidebar: true
 description: >
-  Git과 Github 관련된 포스트들입니다.
+  Anything about Git and Github
 ---

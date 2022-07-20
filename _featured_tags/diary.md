@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: TIL
-slug: til
-category: studylog
+title: Diary
+slug: diary
+category: life
 sidebar: true
 description: >
-  Today I learned
+  About my diary.
 ---

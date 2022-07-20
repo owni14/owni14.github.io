@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: TIL
-slug: til
-category: studylog
+title: Travel
+slug: travel
+category: life
 sidebar: true
 description: >
-  Today I learned
+  About Travel.
 ---

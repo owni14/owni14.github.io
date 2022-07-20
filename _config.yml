@@ -63,7 +63,7 @@ author:
 #     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2022 by Min
+copyright: © 2022. by [Min](https://owni14.github.io/)
 
 # Format of the permalinks
 # permalink:             /blog/:categories/:year-:month-:day-:title/
@@ -210,18 +210,18 @@ comments:
 # You must install giscus github app before use.(https://github.com/apps/giscus)
 # Make sure all variables are set properly. Check below link for detail.
 # https://giscus.vercel.app/
-giscus:
-  repo: 'sunnyfterrain/sunnyfterrain.github.io'
-  repo-id: 'R_kgDOG3Owtg'
-  category: 'General'
-  category-id: 'DIC_kwDOG3Owts4CBNlx'
-  mapping: 'pathname'
-  reaction-enabled: '1'
-  data-emit-metadata: '0'
-  position: 'top'
-  theme: 'light'
-  data-lang: 'ko'
-  crossorigin: 'anonymous'
+#giscus:
+#  repo: 'sunnyfterrain/sunnyfterrain.github.io'
+#  repo-id: 'R_kgDOG3Owtg'
+#  category: 'General'
+#  category-id: 'DIC_kwDOG3Owts4CBNlx'
+#  mapping: 'pathname'
+#  reaction-enabled: '1'
+#  data-emit-metadata: '0'
+#  position: 'top'
+#  theme: 'light'
+#  data-lang: 'ko'
+#  crossorigin: 'anonymous'
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
