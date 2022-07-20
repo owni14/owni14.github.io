@@ -4,6 +4,7 @@ title: '[개발] 어쩌다가 개발자가 되겠다고 결심 했을까?'
 subtitle: '[개발] 어쩌다가 개발자가 되겠다고 결심 했을까?'
 category: life
 tags: life
+published : false
 ---
 
 <!-- more -->

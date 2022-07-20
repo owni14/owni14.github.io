@@ -78,7 +78,7 @@ excerpt_separator: <!--more-->
 # ---------------------------------------------------------------------------------------
 
 # theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+# remote_theme: hydecorp/hydejack@v9
 
 # Customization
 # ----------------------------------------------------------------------------------------
@@ -156,7 +156,7 @@ defaults:
     values:
       comments: true
       # https://applause-button.com/
-      applause_button: true
+      applause_button: false
 
   # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
   # but we want them to be `WebPage`s:
@@ -210,18 +210,18 @@ comments:
 # You must install giscus github app before use.(https://github.com/apps/giscus)
 # Make sure all variables are set properly. Check below link for detail.
 # https://giscus.vercel.app/
-#giscus:
-#  repo: 'sunnyfterrain/sunnyfterrain.github.io'
-#  repo-id: 'R_kgDOG3Owtg'
-#  category: 'General'
-#  category-id: 'DIC_kwDOG3Owts4CBNlx'
-#  mapping: 'pathname'
-#  reaction-enabled: '1'
-#  data-emit-metadata: '0'
-#  position: 'top'
-#  theme: 'light'
-#  data-lang: 'ko'
-#  crossorigin: 'anonymous'
+giscus:
+  repo: 'owni14/owni14.github.io'
+  repo-id: 'R_kgDOHrsZzw'
+  category: 'General'
+  category-id: 'DIC_kwDOHrsZz84CQUpp'
+  mapping: 'pathname'
+  reaction-enabled: '1'
+  data-emit-metadata: '0'
+  position: 'top'
+  theme: 'light'
+  data-lang: 'ko'
+  crossorigin: 'anonymous'
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
