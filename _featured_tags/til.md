@@ -3,7 +3,7 @@ layout: tag-list
 type: tag
 title: TIL
 slug: til
-category: studylog
+category: study
 sidebar: true
 description: >
   Today I learned

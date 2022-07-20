@@ -1,8 +1,8 @@
 ---
 layout: list
 type: category
-title: Study Log
-slug: studylog
+title: Study
+slug: study
 sidebar: true
 order: 4
 description: >

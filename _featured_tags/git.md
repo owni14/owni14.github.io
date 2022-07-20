@@ -3,7 +3,7 @@ layout: tag-list
 type: tag
 title: Git
 slug: git
-category: devlog
+category: dev
 sidebar: true
 description: >
   Anything about Git and Github
