@@ -1,9 +1,9 @@
 ---
 layout: tag-list
 type: tag
-title: Error
+title: Error Log
 slug: error
-category: dev
+category: study
 sidebar: true
 description: >
   About Error.
