@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sunnyfterrain.github.io/sitemap.xml
+Sitemap: https://owni14.github.io/sitemap.xml
