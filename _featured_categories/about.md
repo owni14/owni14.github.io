@@ -12,16 +12,13 @@ order: 1
 
 🙋‍♂️
 
-안녕하세요 백엔드 개발자 김민우입니다.
-
-국비지원으로 자바교육을 마친 후 구직중에 있습니다.
+안녕하세요 백엔드 개발자 **김민우**입니다.
 
 
 ## Education  
-  
+- 멀티 디바이스 융합 자바(Java) 디지털 컨버전스 과정 (February 2022 - July 2022)
 
 ## Experience
-
 
 ## Skills
 `Java` `HTML/CSS` `JavaScript` `JSP` `Oracle` `AJAX`
