@@ -3,7 +3,7 @@ layout: post
 title: '[til] 자바스크립트 정렬'
 subtitle: '[til] 자바스크립트 정렬'
 category: til
-tags: til js
+tags: study til js
 ---
 
 * this ordered seed list will be replaced by the toc 
