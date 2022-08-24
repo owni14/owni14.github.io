@@ -3,7 +3,7 @@ layout: post
 title: '[Diary] 첫 면접 그리고 취업'
 subtitle: '[Diary] 첫 면접 그리고 취업'
 category: life
-tags: life diary
+tags: diary
 ---
 
 <!-- more -->

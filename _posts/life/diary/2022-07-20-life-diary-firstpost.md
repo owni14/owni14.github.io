@@ -3,7 +3,7 @@ layout: post
 title: '[Diary] 블로그 시작'
 subtitle: '[Diary] 블로그 시작'
 category: life
-tags: life diary
+tags: diary
 ---
 
 <!-- more -->
