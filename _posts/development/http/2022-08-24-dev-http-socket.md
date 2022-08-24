@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[Dev] Http통신과 Socket통신'
-subtitle: '[Dev] Http통신과 Socket통신'
+title: '[Dev] HTTP통신과 SOCKET통신'
+subtitle: '[Dev] HTTP통신과 SOCKET통신'
 category: dev
 image: 
     path: /assets/img/http.png
