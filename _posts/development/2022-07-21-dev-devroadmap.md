@@ -4,7 +4,7 @@ title: '[Dev] 개발자 로드맵'
 subtitle: '[Dev] 개발자 로드맵'
 category: dev
 image: 
-    path: /assets/img/development/2022-07-21-life-diary-devroadmap/roadmaps.png
+    path: /assets/img/development/2022-07-21/roadmaps.png
 ---
 
 <!-- more -->
