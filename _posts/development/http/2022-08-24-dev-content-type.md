@@ -2,7 +2,7 @@
 layout: post
 title: '[Dev] Content-Type'
 subtitle: '[Dev] ontent-Type'
-category: dev
+category: dev http
 image: 
     path: /assets/img/http.png
 ---
