@@ -2,7 +2,8 @@
 layout: post
 title: '[Dev] HTTP통신과 SOCKET통신'
 subtitle: '[Dev] HTTP통신과 SOCKET통신'
-category: dev http
+category: dev
+tags: http
 image: 
     path: /assets/img/http.png
 ---
