@@ -1,7 +1,7 @@
 ---
 layout: tag-list
 type: tag
-title: vue
+title: Vue
 slug: vue
 category: dev
 sidebar: true

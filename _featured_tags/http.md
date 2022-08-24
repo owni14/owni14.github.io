@@ -1,7 +1,7 @@
 ---
 layout: tag-list
 type: tag
-title: http
+title: HTTP
 slug: http
 category: dev
 sidebar: true

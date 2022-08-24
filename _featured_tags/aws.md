@@ -1,7 +1,7 @@
 ---
 layout: tag-list
 type: tag
-title: aws
+title: AWS
 slug: aws
 category: dev
 sidebar: true
