@@ -47,4 +47,5 @@ image파일 같은 경우 파일 종류는 image가 되고 파일 포맷은 png,
     - <form>태그를 사용해 클라이언트와 서버간 파일을 업로드 하기 위한 타입
 
 ## Reference
+---
   - [https://pygmalion0220.tistory.com/entry/HTTP-Content-Type](https://pygmalion0220.tistory.com/entry/HTTP-Content-Type)
