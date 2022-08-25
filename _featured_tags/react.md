@@ -1,10 +1,10 @@
 ---
 layout: tag-list
 type: tag
-title: Vue
-slug: vue
+title: React
+slug: React
 category: dev
-sidebar: true
+sidebar: false
 description: >
-  Anything about vue
+  Anything about react
 ---
