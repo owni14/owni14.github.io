@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "[til] == Operator Vs equals Method"
-subtitle: "[til] Operator Vs equals Method"
+title: '[til] == Operator Vs equals Method'
+subtitle: '[til] Operator Vs equals Method'
 category: study
 tags: til
 ---
 
 <!-- prettier-ignore -->
-* this ordered seed list will be replaced by the toc
-  {:toc}
+* this ordered seed list will be replaced by the toc 
+{:toc}
 
 ## String 변수 생성시 주소
 
