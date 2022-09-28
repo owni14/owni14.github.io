@@ -12,12 +12,13 @@ image:
 * this ordered seed list will be replaced by the toc 
 {:toc}
 
-## npm install을 이용해서 package.json 생성
+## npm init 이용해서 package.json 생성
 
 ---
 
 <!-- prettier-ignore -->
-아무파일이 없는 상태에서 vsCode의 Terminal에 `npm install --save`를 이용해 node를 설치하게 되면 package.json이라는 파일이 생겨난다.  
+아무파일이 없는 상태에서 vsCode의 Terminal에 `npm init`를 이용해 설치하게 되면 package.json이라는 파일이 생겨난다.
+따로 설정할게 없다면 `npm init`명령어 입력 후 계속 enter를 눌러 넘어간 다음 마지막에 `yes`를 입력해주면 된다.  
 현재 나는 인프런에서 강의를 들으면서 여러개의 모듈들을 추가해서 공부하고 있기에 여러개 파일이 많이 보일 것이다. 제일 위에 있는 name부터 하나씩 살펴보도록 하자.
 
 ## name
