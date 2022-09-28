@@ -2,8 +2,8 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              Minwoo Kim
-  email:             kmwoo514@gmail.com
+  name: Minwoo Kim
+  email: kmwoo514@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -11,11 +11,11 @@ author1:
     운동하는 것과 개발을 좋아하는 **소프트웨어 개발자**입니다. 🙇‍♂️  
     **긍정적 사고**와 **책임감**을 바탕으로 즐기면서 개발하고 있습니다. 👨‍💻  
     한 분야에만 국한된 것이 아닌 **여러 분야**를 **경험**하며 **폭 넓은 개발자**가 되기 위해 노력하고 있습니다. ✨  
-    개인 기술블로그로써 틀린 부분이 있을 수 있습니다. 댓글 달아주시면 감사하겠습니다! 😊
+    개인 기술블로그로써 틀린 부분이 있을 수 있습니다. 발견하시게 되면 댓글 달아주시면 감사하겠습니다! 😊
 
   # This photo will be used in the about section
   picture:
-    path:            /assets/img/me.jpg
+    path: /assets/img/me.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     # srcset:
     #   1x:
@@ -25,13 +25,13 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    # twitter:       
-    instagram:       ow.ni
-    github:          https://github.com/owni14
-    email:           kmwoo514@gmail.com
-    # linkedin:        
-    # stackoverflow:    
-    # rss:             
+    # twitter:
+    instagram: ow.ni
+    github: https://github.com/owni14
+    email: kmwoo514@gmail.com
+    # linkedin:
+    # stackoverflow:
+    # rss:
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
@@ -48,7 +48,7 @@ author1:
     # deviantart:      <username>
     # ello:            <username>
     # twitch:          <username>
-    # steam:           
+    # steam:
     # reddit:          <username>
     # tumblr:          <username>
     # pinterest:       <username>
