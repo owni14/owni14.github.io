@@ -46,6 +46,7 @@ image:
 
 - 패키지안에서 자주 사용되는 명령어를 적어두는 곳이다.
 - `npm` 명령어로 실행이 가능하다.
+- `script`안에 `"start:" "node index.js`라고 적혀있는 부분은 `npm run start`명령어를 이용해 node를 시작할때 **index.js**에서 시작한다는 의미이다.
 
 ## author
 
