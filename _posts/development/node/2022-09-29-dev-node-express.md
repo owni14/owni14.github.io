@@ -20,6 +20,8 @@ image:
 
 ## express 설치
 
+node 설치와 `npm init`을 함으로써 package.json파일이 생성된 상태에서 express 설치를 진행한다.  
+node설치를 완료하지 않았으면 (node 설치)[], package.json파일이 생성되어있지 않은상태이면 (package.json파일 생성)[]을 참고해서 기초 셋팅을 하고 오면 되겠다.
 express를 사용하기 위해서는 Terminal에서 `npm install express --save`를 이용해서 설치를 해주어야 사용이 가능하다.
 
 ## Reference
