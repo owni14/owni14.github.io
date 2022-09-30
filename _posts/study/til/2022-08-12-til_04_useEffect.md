@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[til] Today I Learned at 20220812'
-subtitle: '[til] Today I Learned at 20220812'
+title: '[til] useEffect'
+subtitle: '[til] useEffect'
 category: study
 tags: til
 ---

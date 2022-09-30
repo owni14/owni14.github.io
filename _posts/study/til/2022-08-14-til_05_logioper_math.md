@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[til] Today I Learned at 20220814'
-subtitle: '[til] Today I Learned at 20220814'
+title: '[til] 논리연산자, math함수, ??연산자'
+subtitle: '[til] 논리연산자, math함수, ??연산자'
 category: study
 tags: til
 ---

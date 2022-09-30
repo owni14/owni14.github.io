@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[til] Today I Learned at 20220811'
-subtitle: '[til] Today I Learned at 20220811'
+title: '[til] replace, 정규표현식, indexOf'
+subtitle: '[til] replace, 정규표현식, indexOf'
 category: study
 tags: til
 ---

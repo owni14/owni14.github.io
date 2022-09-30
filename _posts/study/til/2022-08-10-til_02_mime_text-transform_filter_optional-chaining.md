@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[til] Today I Learned at 20220810'
-subtitle: '[til] Today I Learned at 20220810'
+title: '[til] MIME, Text-transform, Filter, Optional-Chaining'
+subtitle: '[til] MIME, Text-transform, Filter, Optional-Chaining'
 category: study
 tags: til
 ---

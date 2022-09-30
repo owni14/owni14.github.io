@@ -62,7 +62,7 @@ app.listen(port, () => {
 에러없이 정상적으로 서버가 구동됐다는 것을 터미널에서 확인할 수 있다.  
 ![npm_run_start](/assets/img/development/2022-09-29/npm_run_start.png)
 
-인터넷에서 localhost:3000을 입력하게 되면 다음 이미지와 같이 Hello World!가 출력될 것이다.
+index.js파일에 port를 3000으로 기본적 설정이 되어 있으므로 인터넷에서 localhost:3000을 입력하게 되면 다음 이미지와 같이 Hello World!가 출력될 것이다.  
 ![localhost_3000](/assets/img/development/2022-09-29/localhost_3000.png)
 
 ## Reference
