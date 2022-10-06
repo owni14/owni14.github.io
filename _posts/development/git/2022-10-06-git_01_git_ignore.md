@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[Git] gitignore로 필요없는 파일 제거'
-subtitle: '[Git] gitignore로 필요없는 파일 제거'
+title: '[Git] git ignore로 필요없는 파일 제거'
+subtitle: '[Git] git ignore로 필요없는 파일 제거'
 category: dev
 tags: git
 image:
@@ -12,12 +12,12 @@ image:
 * this ordered seed list will be replaced by the toc
 {:toc}
 
-## gitignore이란?
+## git ignore이란?
 
 gitignore은 원격저장소인 Git에 필요없는 파일들은 무시해서 올리지 않게 해주는 것입니다.
 예를 들어 node_modules과 라이브러리같은 파일들은 git저장소에 올리지 않아도 된다. 그리고 비밀번호와 인증과 같은 파일역시 보안에 민감하기 때문에 git저장소에 올리지 않아야 한다.
 
-## .gitignore파일 생성
+## .git ignore파일 생성
 
 gitignore을 사용하기 위해서는 gitignore파일을 생성해야한다.  
 아래와 같이 .gitignore파일을 생성하고 자신이 올리면 안되는 파일이나 폴더를 작성해주면 된다.
