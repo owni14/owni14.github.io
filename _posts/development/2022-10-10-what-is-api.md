@@ -38,6 +38,18 @@ API란 특정 사이트에서 특정 데이터를 공유할 경우 어떠한 방
 
 - REST는 네트워크상에서 Client와 Server 사이의 통신 방식 중 하나이다.
 
+## REST의 구체적인 개념
+
+- HTTP URL(Uniform Resource Identifier)을 통해 자원(Resource)을 명시하고, HTTP Method(POST, GET, PUT, DELETE)를 통해 해당 자원에 대한 CRUD Operation을 적용하는 것을 의미한다.
+- REST는 자원 기반의 구조(ROA, Resource Oriented Architecture) 설계의 중심에 Resource가 있고 HTTP Method를 통해 Resource를 처리하도록 설계된 아키텍처를 의미한다.
+- 웹 사이트의 이미지, 텍스트, DB 내용 등의 모든 자원에 고유한 ID인 HTTP URL를 부여한다.
+- CRUD Operation
+  - Create : 생성(POST)
+  - Read : 조회(GET)
+  - Update : 수정(PUT)
+  - Delete : 삭제(DELETE)
+  - HEAD : header 정보 조회(HEAD)
+
 ## Reference
 
 [https://ko.wikipedia.org/wiki/API](https://ko.wikipedia.org/wiki/API)
