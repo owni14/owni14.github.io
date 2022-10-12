@@ -1,10 +1,11 @@
 ---
 layout: tag-list
 type: tag
-title: React
-slug: React
+title: react
+slug: react
 category: dev
-sidebar: false
+sidebar: true
+order: 4
 description: >
   Anything about react
 ---

@@ -4,7 +4,7 @@ type: tag
 title: git
 slug: git
 category: dev
-order: 5
+order: 6
 sidebar: true
 description: >
   Anything about Git and Github
