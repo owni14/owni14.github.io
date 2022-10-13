@@ -48,6 +48,8 @@ React는 페이스북에서 개발되어 제공해주는 프론트엔드 라이�
 
 ## JSX 문법
 
+---
+
 자바스크립트와 HTML을 동시에 사용하며, HTML에 자바스크립트의 변수들을 바로 사용할 수 있는 일종의 템플릿 언어이다.
 
 ```
@@ -60,6 +62,8 @@ const App = () => {
 다음과 같이 자바스크립트에서 HTML 태그 사용이 가능하고 자바스크립트 변수를 html 태그에서 바로 호출하여 사용할 수 있다.
 
 ## Reference
+
+---
 
 [https://velog.io/@jini_eun/React-React.js%EB%9E%80-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC](https://velog.io/@jini_eun/React-React.js%EB%9E%80-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC)
 
