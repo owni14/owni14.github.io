@@ -14,10 +14,14 @@ image:
 
 ## nodemon이란?
 
+---
+
 우리가 서버에서 소스를 변경했을 경우 새로고침을 해도 변경된 내용을 볼 수가 없다. 서버를 키고 꺼야지만 변경한 내용을 확인 할 수 있는데 이러한 과정이 상당히 불편하다.  
 그래서 nodemon이란게 나오게 되었는데 서버에서 소스변경이 감지되면 자동으로 서버를 재시작해주는 Tool이다.
 
 ## nodemon설치
+
+---
 
 일반적으로 이때까지 설치한 것과 비슷하게 `npm install`을 이용해서 설치해주면 된다. 그런데 nodemon은 로컬환경에서만 사용할 것이기 때문에 뒤에 `-dev`를 붙여주면 된다.
 
@@ -30,5 +34,7 @@ image:
 ![nodemon](/assets/img/development/2022-10-06/nodemon.png)
 
 ## Reference
+
+---
 
 [https://www.youtube.com/watch?v=u2nACoz4Vjg&list=PL9a7QRYt5fqkZC9jc7jntD1WuAogjo_9T&index=8](https://www.youtube.com/watch?v=u2nACoz4Vjg&list=PL9a7QRYt5fqkZC9jc7jntD1WuAogjo_9T&index=8)

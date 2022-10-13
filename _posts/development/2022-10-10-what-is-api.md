@@ -14,6 +14,8 @@ image:
 
 ## API란?
 
+---
+
 개발을 하면서 정말 많이 듣게 되는 **API**. 과연 API란 뭘까?
 
 > API(application programming interface 애플리케이션 프로그래밍 인터페이스, 응용 프로그램 프로그래밍 인터페이스)는 컴퓨터나 컴퓨터 프로그램 사이의 연결이다. 일종의 소프트웨어 인터페이스이며 다른 종류의 소프트웨어에 서비스를 제공한다.
@@ -26,6 +28,8 @@ image:
 즉, 다시말해 서로 상호작용하는 것을 도와주는 매개체라고 생각하면 좋을꺼 같다.
 
 ## REST란?
+
+---
 
 - "Representational State Transfer”의 약자로써 자원을 이름(자원의 표현)으로 구분하여 해당 자원의 상태(정보)를 주고 받는 모든 것을 의미한다. 즉, 자원의 표현에 의한 전달이다.
 
@@ -43,6 +47,8 @@ image:
 
 ## REST의 구체적인 개념
 
+---
+
 - HTTP URL(Uniform Resource Identifier)을 통해 자원(Resource)을 명시하고, HTTP Method(POST, GET, PUT, DELETE)를 통해 해당 자원에 대한 CRUD Operation을 적용하는 것을 의미한다.
 - REST는 자원 기반의 구조(ROA, Resource Oriented Architecture) 설계의 중심에 Resource가 있고 HTTP Method를 통해 Resource를 처리하도록 설계된 아키텍처를 의미한다.
 - 웹 사이트의 이미지, 텍스트, DB 내용 등의 모든 자원에 고유한 ID인 HTTP URL를 부여한다.
@@ -54,6 +60,8 @@ image:
   - HEAD : header 정보 조회(HEAD)
 
 ## REST의 장단점
+
+---
 
 - 장점
 
@@ -75,12 +83,16 @@ image:
 
 ## REST가 필요한 이유
 
+---
+
 - ‘애플리케이션 분리 및 통합’
 - ‘다양한 클라이언트의 등장’
 - 최근의 서버 프로그램은 다양한 브라우저와 안드로이드폰, 아이폰과 같은 모바일 디바이스에서도 통신을 할 수 있어야한다.
 - 이러한 멀티 플랫폼에 대한 지원을 위해 서비스 자원에 대한 아키텍처를 세우고 이용하는 방법을 모색한 결과, REST에 관심을 가지게 되었다.
 
 ## REST 구성 요소
+
+---
 
 - 자원(Resource) : URL
 
@@ -100,6 +112,8 @@ image:
   - JSON 혹은 XML를 통해 데이터를 주고 받는 것이 일반적이다.
 
 ## REST 특징
+
+---
 
 - Server-Client(서버-클라이언트 구조)
 
@@ -141,16 +155,22 @@ image:
 
 ## REST API란?
 
+---
+
 - REST 기반으로 서비스 API를 구현하는 것
 - 최근 OpenAPI(누구나 사용할 수 있도록 공개된 API : 구글 맵, 공공 데이터 등), 마이크로 서비스(하나의 큰 애플리케이션을 여러 개의 작은 애플리케이션으로 쪼개어 변경과 조합이 가능하도록 만든 아키텍처) 등을 제공하는 업체 대부분은 REST API를 제공한다.
 
 ## REST API의 특징
+
+---
 
 - 사내 시스템들도 REST 기반으로 시스템을 분산해 확장성과 재사용성을 높여 유지보수 및 운용을 편리하게 할 수 있다.
 - REST는 HTTP 표준을 기반으로 구현하므로, HTTP를 지원하는 프로그램 언어로 클라이언트, 서버를 구현할 수 있다.
 - 즉, REST API를 제작하면 델파이 클라이언트 뿐 아니라, 자바, C#, 웹 등을 이용해 클라이언트를 제작할 수 있다.
 
 ## REST API 설계 기본 규칙
+
+---
 
 - 참고 리소스 원형
 
@@ -180,6 +200,8 @@ image:
 
 ## REST API 설계 규칙
 
+---
+
 - 슬래시 구분자(/ )는 계층 관계를 나타내는데 사용한다.
   - http://restapi.example.com/houses/apertments
 - URL 마지막 문자로 슬래시(/ )를 포함하지 않는다.
@@ -204,6 +226,8 @@ image:
 
 ## RESTful이란?
 
+---
+
 - RESTful은 일반적으로 REST라는 아키텍처를 구현하는 웹 서비스를 나타내기 위해 사용되는 용어이다.
   - ‘REST API’를 제공하는 웹 서비스를 ‘RESTful’하다고 할 수 있다.
 - RESTful은 REST를 REST답게 쓰기 위한 방법으로, 누군가가 공식 적으로 발표한 것이 아니다.
@@ -211,10 +235,14 @@ image:
 
 ## RESTful 하지 못한 경우
 
+---
+
 - Ex1) CRUD 기능을 모두 POST로만 처리하는 API
 - Ex2) route에 resource, id 외의 정보가 들어가는 경우(/students/updateName)
 
 ## Reference
+
+---
 
 [https://ko.wikipedia.org/wiki/API](https://ko.wikipedia.org/wiki/API)
 

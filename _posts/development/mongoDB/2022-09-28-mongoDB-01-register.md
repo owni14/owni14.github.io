@@ -14,6 +14,8 @@ image:
 
 ## 회원가입
 
+---
+
 mongoDB를 사용하기 위해서는 먼저 회원가입을 해야하므로 [mongoDB 홈페이지](https://www.mongodb.com/)로 이동하자.  
 홈페이지에 접속하게 되면 아래와 같은 화면이 먼저 나올 것이다.
 
@@ -31,5 +33,7 @@ mongoDB를 사용하기 위해서는 먼저 회원가입을 해야하므로 [mon
      ![](/assets/img/development/2022-09-28/mongoDB_welcome_atlas.png)
 
 ## Reference
+
+---
 
 [https://www.youtube.com/watch?v=fgoMqmNKE18&list=PL9a7QRYt5fqkZC9jc7jntD1WuAogjo_9T](https://www.youtube.com/watch?v=fgoMqmNKE18&list=PL9a7QRYt5fqkZC9jc7jntD1WuAogjo_9T)

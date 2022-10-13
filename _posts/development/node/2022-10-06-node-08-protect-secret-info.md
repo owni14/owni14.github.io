@@ -14,10 +14,14 @@ image:
 
 ## 비밀정보 보호란?
 
+---
+
 비밀정보라고 하면 mongoDB에서 가져온 application code같은 것들이 있을 수 있는데, 이와 같은 정보들이 외부로 노출되게되면 다른사람들이 손쉽게 데이터를 조작할 수 있다.  
 그래서 비밀정보들은 보호해 주어야 하는데 로컬환경, 배포환경에 따라서 달라질 수 있다. 로컬환경은 말 그대로 우리 서버에서 실행하는 환경을 의미하고 배포환경이라고 하면 AWS, Azure, Heroku서버등이 있을 수 있다.
 
 ## config폴더 생성
+
+---
 
 ![config_file](/assets/img/development/2022-10-06/config_file.png)  
 다음과 같이 나는 config폴더를 생성하고 mongoDB와 로컬에서 연결을 하는 `dev.js`, 배포환경에서 연결하는 `prod.js` 로컬이나 배포환경이냐에 따라 분기처리를 해주는 `key.js`파일을 생성하였다.
@@ -67,6 +71,8 @@ if (process.env.NODE_ENV === 'production') {
 ```
 
 ## Reference
+
+---
 
 [https://www.youtube.com/watch?v=0z1jV4rzaH0&list=PL9a7QRYt5fqkZC9jc7jntD1WuAogjo_9T&index=9](https://www.youtube.com/watch?v=0z1jV4rzaH0&list=PL9a7QRYt5fqkZC9jc7jntD1WuAogjo_9T&index=9)
 [https://www.daleseo.com/js-node-process-env/](https://www.daleseo.com/js-node-process-env/)

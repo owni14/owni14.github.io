@@ -14,11 +14,15 @@ image:
 
 ## express란?
 
+---
+
 > Express.js, 또는 간단히 익스프레스(Express)는 Node.js를 위한 웹 프레임워크의 하나로, MIT 허가서로 라이선스되는 자유-오픈 소스 소프트웨어로 출시되었다. 웹 애플리케이션, API 개발을 위해 설계되었다. Node.js의 사실상의 표준 서버 프레임워크로 불리고 있다.
 
 위키백과에서 인용해온 문구인데 사실상 잘 이해가 되지 않는다. 그래서 자료들은 더 찾아보니, node.js 사용하여 **서버**를 **좀 더 쉽게** 구성할 수 있게 해주는 프레임워크인 것이다.
 
 ## express 설치
+
+---
 
 node 설치와 `npm init`을 함으로써 package.json파일이 생성된 상태에서 express 설치를 진행한다.  
 node설치를 완료하지 않았으면 [node 설치](https://owni14.github.io/dev/dev-node-install.html), package.json파일이 생성되어있지 않은상태이면 [package.json 파일 생성](https://owni14.github.io/dev/dev-node-package.html)을 참고해서 기초 셋팅을 하고 오면 되겠다.
@@ -28,10 +32,14 @@ express뒤에 `--save`를 해주는 이유는 package.json의 dependencies에 �
 
 ## package.json 확인
 
+---
+
 express 설치를 완료했으면 package.json파일의 dependencies에 `express`가 추가되어 있을 것이다.
 ![package.json_dependencies](/assets/img/development/2022-09-29/package.json_dependencies.png)
 
 ## Hello World 출력해보기
+
+---
 
 서버를 이용해 웹 페이지에 Hello World를 출력해보자!  
 공식문서를 살펴보니 따로 `.js`파일을 생성해야한다고 적혀있는데 나는 index.js파일을 생성하였다.
@@ -66,6 +74,8 @@ index.js파일에 port를 3000으로 기본적 설정이 되어 있으므로 인
 ![localhost_3000](/assets/img/development/2022-09-29/localhost_3000.png)
 
 ## Reference
+
+---
 
 - [https://ko.wikipedia.org/wiki/Express.js](https://ko.wikipedia.org/wiki/Express.js)
 - [https://expressjs.com/ko/](https://expressjs.com/ko/)

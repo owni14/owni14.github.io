@@ -14,6 +14,8 @@ image:
 
 ## node 설치
 
+---
+
 node를 사용하기 위해서는 먼저 설치를 진행해줘야 한다. [노드 홈페이지](https://nodejs.org/en/download/)에 접속하게 되면 LTS 버전과 Current버전 두개가 나오게 된다.
 
 LTS는 **Long Term Support**의 약자로 오랫동안 지원되고 있어 <u>안정적</u>이고 <u>신뢰성</u>이 높고, **Current**는 말 그대로 현재 버전이라는 의미안데 최신 기능이 들어가 있어 안정성이 떨어질 수 있다. node에서는 대부분의 사용자들에게 LTS버전을 추천하고 있다.

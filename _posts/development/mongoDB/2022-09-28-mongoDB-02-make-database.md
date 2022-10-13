@@ -14,6 +14,8 @@ image:
 
 ## 클라우드 데이터 베이스 생성
 
+---
+
 1. 나 같은 경우 혼자서 몽고DB에 대해 연습을 할 계획이므로 무료로 이용할 수 있는 Shared를 클릭해서 데이터베이스를 생성해주었다.
    ![mongoDB_cloud_database](/assets/img/development/2022-09-28/mongoDB_cloud_database.png)
 
@@ -30,5 +32,7 @@ image:
    ![mongoDB_database](/assets/img/development/2022-09-28/mongoDB_database.png)
 
 ## Reference
+
+---
 
 [https://www.youtube.com/watch?v=fgoMqmNKE18&list=PL9a7QRYt5fqkZC9jc7jntD1WuAogjo_9T](https://www.youtube.com/watch?v=fgoMqmNKE18&list=PL9a7QRYt5fqkZC9jc7jntD1WuAogjo_9T)
