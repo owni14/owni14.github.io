@@ -58,3 +58,11 @@ const App = () => {
 ```
 
 다음과 같이 자바스크립트에서 HTML 태그 사용이 가능하고 자바스크립트 변수를 html 태그에서 바로 호출하여 사용할 수 있다.
+
+## Reference
+
+[https://velog.io/@jini_eun/React-React.js%EB%9E%80-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC](https://velog.io/@jini_eun/React-React.js%EB%9E%80-%EA%B0%84%EB%8B%A8-%EC%A0%95%EB%A6%AC)
+
+[https://dev-yakuza.posstree.com/ko/react/create-react-app/react/](https://dev-yakuza.posstree.com/ko/react/create-react-app/react/)
+
+[https://valuefactory.tistory.com/544](https://valuefactory.tistory.com/544)
