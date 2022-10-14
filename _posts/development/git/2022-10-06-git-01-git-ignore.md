@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[Git] git ignore로 필요없는 파일 및 폴더 제거'
-subtitle: '[Git] git ignore로 필요없는 파일 및 폴더 제거'
+title: '[git] git ignore로 필요없는 파일 및 폴더 제거'
+subtitle: '[git] git ignore로 필요없는 파일 및 폴더 제거'
 category: dev
 tags: git
 image:

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[HTTP] Content-Type'
-subtitle: '[HTTP] ontent-Type'
+title: '[http] Content-Type'
+subtitle: '[http] ontent-Type'
 category: dev
 tags: http
 image:

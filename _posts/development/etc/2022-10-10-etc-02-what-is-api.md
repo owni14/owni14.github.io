@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[Dev] API, REST, RESTFUL API에 대하여'
-subtitle: '[Dev] API, REST, RESTFUL API에 대하여'
+title: '[etc] API, REST, RESTFUL API에 대하여'
+subtitle: '[etc] API, REST, RESTFUL API에 대하여'
 category: dev
 tags: etc
 image:
