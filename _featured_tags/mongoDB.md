@@ -1,8 +1,8 @@
 ---
 layout: tag-list
 type: tag
-title: mongoDB
-slug: mongo
+title: MongoDB
+slug: MongoDB
 category: dev
 order: 5
 sidebar: true

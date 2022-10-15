@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[node] node의 프레임워크 express'
-subtitle: '[node] node의 프레임워크 express'
+title: '[Node] node의 프레임워크 express'
+subtitle: '[Node] node의 프레임워크 express'
 category: dev
 tags: node
 image:

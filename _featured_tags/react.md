@@ -1,8 +1,8 @@
 ---
 layout: tag-list
 type: tag
-title: react
-slug: react
+title: React
+slug: React
 category: dev
 sidebar: true
 order: 4

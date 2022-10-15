@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[node] Body-parser란?'
-subtitle: '[node] Body-parser란?'
+title: '[Node] Body-parser란?'
+subtitle: '[Node] Body-parser란?'
 category: dev
 tags: node
 image:

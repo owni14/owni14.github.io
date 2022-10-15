@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[node] nodemon이란?'
-subtitle: '[node] nodemon이란?'
+title: '[Node] nodemon이란?'
+subtitle: '[Node] nodemon이란?'
 category: dev
 tags: node
 image:

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[mongoDB] 데이터베이스 연동'
-subtitle: '[mongoDB] 데이터베이스 연동'
+title: '[MongoDB] 데이터베이스 연동'
+subtitle: '[MongoDB] 데이터베이스 연동'
 category: dev
 tags: mongo
 image:

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[node] postmand이란?'
-subtitle: '[node] postmand이란?'
+title: '[Node] postmand이란?'
+subtitle: '[Node] postmand이란?'
 category: dev
 tags: node
 image:

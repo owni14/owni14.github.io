@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[mongoDB] 모델과 스키마'
-subtitle: '[mongoDB] 모델과 스키마'
+title: '[MongoDB] 모델과 스키마'
+subtitle: '[MongoDB] 모델과 스키마'
 category: dev
 tags: mongo
 image:

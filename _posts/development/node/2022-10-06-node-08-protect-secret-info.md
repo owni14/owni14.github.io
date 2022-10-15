@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[node] 비밀정보 보호'
-subtitle: '[node] 비밀정보 보호'
+title: '[Node] 비밀정보 보호'
+subtitle: '[Node] 비밀정보 보호'
 category: dev
 tags: node
 image:

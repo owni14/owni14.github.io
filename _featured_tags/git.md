@@ -1,8 +1,8 @@
 ---
 layout: tag-list
 type: tag
-title: git
-slug: git
+title: Git
+slug: Git
 category: dev
 order: 6
 sidebar: true

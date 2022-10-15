@@ -1,7 +1,7 @@
 ---
 layout: tag-list
 type: tag
-title: javascript
+title: Javascript
 slug: js
 category: dev
 order: 2

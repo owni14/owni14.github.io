@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[mongoDB] 회원가입'
-subtitle: '[mongoDB] 회원가입'
+title: '[MongoDB] 회원가입'
+subtitle: '[MongoDB] 회원가입'
 category: dev
 tags: mongo
 image:

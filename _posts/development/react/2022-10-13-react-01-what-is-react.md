@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[react] 리액트란?'
-subtitle: '[react] 리액트란?'
+title: '[React] 리액트란?'
+subtitle: '[React] 리액트란?'
 category: dev
 tags: react
 image:

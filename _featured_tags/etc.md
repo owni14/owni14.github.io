@@ -1,7 +1,7 @@
 ---
 layout: tag-list
 type: tag
-title: etc
+title: Etc
 slug: etc
 category: dev
 order: 7

@@ -1,8 +1,8 @@
 ---
 layout: tag-list
 type: tag
-title: node
-slug: node
+title: Node
+slug: Node
 category: dev
 order: 3
 sidebar: true

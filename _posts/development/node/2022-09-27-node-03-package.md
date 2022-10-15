@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[node] package란?'
-subtitle: '[node] package?'
+title: '[Node] package란?'
+subtitle: '[Node] package?'
 category: dev
 tags: node
 image:

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[node] node 설치'
-subtitle: '[node] node 설치'
+title: '[Node] node 설치'
+subtitle: '[Node] node 설치'
 category: dev
 tags: node
 image:

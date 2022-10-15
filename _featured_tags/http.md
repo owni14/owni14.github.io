@@ -1,8 +1,8 @@
 ---
 layout: tag-list
 type: tag
-title: http
-slug: http
+title: Http
+slug: Http
 category: dev
 order: 1
 sidebar: true
