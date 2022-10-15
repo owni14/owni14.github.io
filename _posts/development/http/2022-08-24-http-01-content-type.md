@@ -28,8 +28,8 @@ image:
 - Header에 데이터가 아무것도 없다면 단순 텍스트 데이터로 받게 된다.
 - HTTP GET Method는 형식이 value=text으로 보내지기 때문에 Content-Type을 따로 지정해줄 필요가 없다.
 - HTTP POST / PUT Method는 데이터를 Body에 data를 담아 보내게 될 경우에는 Content-Type이 필요
-- axios를 이용해 클라이언트 → 서버로 API 요청 할 경우 application/json형식으로 지정  
-  **json** : 자바스크립트 객체를 만들기 위한 표현식으로서 Key, Value로 구성되어 있다.
+- axios를 이용해 클라이언트 → 서버로 API 요청 할 경우 application/json형식으로 지정
+  - **json** : 자바스크립트 객체를 만들기 위한 표현식으로서 Key, Value로 구성되어 있다.
 
 ## MIME이란?
 
@@ -38,6 +38,11 @@ image:
 MIME의 정의는 Multipurpose Internet Mail Extensions의 약자로 파일 변환을 의미한다.  
 인코딩할 경우 바이너리 파일 > 텍스트 파일로, 디코딩할 경우 텍스트 파일 > 바이너리 파일로 변환한다.  
 MIME으로 인코딩한 파일은 Content-type정보를 앞부분에 담으며, MIME은 공백, 대/소문자를 구분하지 않고 대부분 소문자로 쓰인다.
+
+**바이너리 파일** : 데이터의 저장과 처리를 목적으로 0과 1의 이진 형식으로 인코딩된 파일  
+**인코딩** : 사용자가 입력한 문자나 기호들을 컴퓨터가 이용할 수 있는 신호로 만드는 것  
+**디코딩** : 사람이 이해 할 수 있도록 바꿔주는 것을 의미
+{:.note}
 
 ## MIME파일 형식
 
