@@ -5,7 +5,7 @@ subtitle: '[Etc] API, REST, RESTFUL API에 대하여'
 category: dev
 tags: etc
 image:
-  path: /assets/img/development/2022-10-10/api.png
+  path: /assets/img/development/2022/10/10/api.png
 ---
 
 <!-- prettier-ignore -->

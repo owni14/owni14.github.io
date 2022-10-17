@@ -28,7 +28,7 @@ API를 개발하기 위해 클라이언트측에서 URL을 통해서 요청하�
 
 [postman 다운로드](https://www.postman.com/downloads/)에 접속해서 어플리케이션을 다운 후 실행할 수 있다.
 
-![postman_download_site](/assets/img/development/2022-10-04/postman_download_site.png)
+![postman_download_site](/assets/img/development/2022/10/04/postman_download_site.png)
 
 ## postman 회원가입
 
@@ -36,9 +36,9 @@ API를 개발하기 위해 클라이언트측에서 URL을 통해서 요청하�
 
 어플리케이션을 실행 후 회원가입을 클릭하여 계정 생성으로 이동하게 되면 계정을 생성할 수 있는데 나는 google계정을 통해서 가입을 하였다.
 
-![create_account_postman](/assets/img/development/2022-10-04/create_account_postman.png)
+![create_account_postman](/assets/img/development/2022/10/04/create_account_postman.png)
 
-![register_postman](/assets/img/development/2022-10-04/register_postman.png)
+![register_postman](/assets/img/development/2022/10/04/register_postman.png)
 
 ## Reference
 

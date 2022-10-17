@@ -5,7 +5,7 @@ subtitle: '[Node] package?'
 category: dev
 tags: node
 image:
-  path: /assets/img/development/2022-09-27/package.json_capture.png
+  path: /assets/img/development/2022/09/27/package.json_capture.png
 ---
 
 <!-- prettier-ignore -->

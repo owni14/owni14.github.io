@@ -44,13 +44,13 @@ app.get('/test', (req, res) => {
 ```
 
 npm run start로 서버를 실행시킨 후, postman을 통해 body부분에 데이터를 담아 전송
-![postman_sending](/assets/img/development/2022-10-05/postmant_sending.png)
+![postman_sending](/assets/img/development/2022/10/05/postmant_sending.png)
 
 console을 통한 body값 확인  
-![request_body](/assets/img/development/2022-10-05/request_body.png)
+![request_body](/assets/img/development/2022/10/05/request_body.png)
 
 postman을 통한 response값 확인
-![response](/assets/img/development/2022-10-05/response.png)
+![response](/assets/img/development/2022/10/05/response.png)
 
 ## Reference
 

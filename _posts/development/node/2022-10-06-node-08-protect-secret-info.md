@@ -23,7 +23,7 @@ image:
 
 ---
 
-![config_file](/assets/img/development/2022-10-06/config_file.png)  
+![config_file](/assets/img/development/2022/10/06/config_file.png)  
 다음과 같이 나는 config폴더를 생성하고 mongoDB와 로컬에서 연결을 하는 `dev.js`, 배포환경에서 연결하는 `prod.js` 로컬이나 배포환경이냐에 따라 분기처리를 해주는 `key.js`파일을 생성하였다.
 
 - dev.js (로컬환경)
@@ -46,7 +46,7 @@ module.exports = {
 
 Node.js에서 환경 변수에 접근할 때는 process.env라는 내장 자바스크립트 객체를 사용하며, process는 전역 객체여서 별도로 임포트해야하는 모듈이 없으며 애플리케이션 어디에서든지 접근이 가능하다.  
 배포서버는 heroku라는 서버를 이용할건데, 서버의 config를 MONGO_URI라는 이름으로 설정해 놓았기 때문에 `process.env.MONGO_URI`로 mongoDB와 연결한다. MONGO_URI뒤에 있는 부분은 자신의 mongoDB 로컬환경연결에서 사용하는 application code를 넣어주면 된다.
-![heroku_server_config](/assets/img/development/2022-10-06/heroku_server_config.png)
+![heroku_server_config](/assets/img/development/2022/10/06/heroku_server_config.png)
 
 - key.js (로컬 or 배포환경 분기처리)
 

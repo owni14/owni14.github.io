@@ -27,11 +27,11 @@ image:
 
 일반적으로 설치하게 될 경우 `dependencies`에 의존성이 추가 되지만 `-dev`를 하게 되면 `devDependencies`라는 새로운 내용이 `package.json`파일에 추가 되어지게 된다.
 
-![devDependencies](/assets/img/development/2022-10-06/devDependencies.png)
+![devDependencies](/assets/img/development/2022/10/06/devDependencies.png)
 
 `npm install nodemon --save-dev`로 설치를 마무리하고, `package.json`파일에 있는 `scripts`내용을 추가해줘야 한다. 우리는 nodemon을 이용해서 index.js를 실행해주기 위해 `"scripts": { "dev": "nodemon index.js" }`로 작성해줘야한다.  
 그러면 이제 `npm run dev`를 이용해서 서버를 킬 수 있게 된다.
-![nodemon](/assets/img/development/2022-10-06/nodemon.png)
+![nodemon](/assets/img/development/2022/10/06/nodemon.png)
 
 ## Reference
 
