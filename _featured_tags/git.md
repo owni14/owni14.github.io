@@ -2,7 +2,7 @@
 layout: tag-list
 type: tag
 title: Git
-slug: Git
+slug: git
 category: dev
 order: 6
 sidebar: true

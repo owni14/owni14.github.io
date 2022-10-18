@@ -3,7 +3,7 @@ layout: post
 title: '[MongoDB] 모델과 스키마'
 subtitle: '[MongoDB] 모델과 스키마'
 category: dev
-tags: mongo
+tags: mongoDB
 image:
   path: /assets/img/mongoDB.png
 ---

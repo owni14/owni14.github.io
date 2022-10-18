@@ -2,7 +2,7 @@
 layout: tag-list
 type: tag
 title: Error Log
-slug: error
+slug: err
 category: study
 sidebar: true
 description: >

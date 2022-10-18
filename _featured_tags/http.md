@@ -2,7 +2,7 @@
 layout: tag-list
 type: tag
 title: Http
-slug: Http
+slug: http
 category: dev
 order: 1
 sidebar: true

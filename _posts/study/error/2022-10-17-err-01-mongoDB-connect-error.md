@@ -3,7 +3,7 @@ layout: post
 title: '[error] 아이피변경에 따른 MongoDB연결 에러'
 subtitle: '[error] 아이피변경에 따른 MongoDB연결 에러'
 category: study
-tags: til
+tags: err
 ---
 
 <!-- prettier-ignore -->

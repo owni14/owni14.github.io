@@ -2,7 +2,7 @@
 layout: tag-list
 type: tag
 title: MongoDB
-slug: MongoDB
+slug: mongoDB
 category: dev
 order: 5
 sidebar: true

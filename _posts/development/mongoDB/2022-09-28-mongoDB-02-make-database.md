@@ -3,7 +3,7 @@ layout: post
 title: '[MongoDB] 데이터베이스 생성'
 subtitle: '[MongoDB] 데이터베이스 생성'
 category: dev
-tags: mongo
+tags: mongoDB
 image:
   path: /assets/img/mongoDB.png
 ---

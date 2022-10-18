@@ -3,7 +3,7 @@ layout: post
 title: '[MongoDB] 회원가입'
 subtitle: '[MongoDB] 회원가입'
 category: dev
-tags: mongo
+tags: mongoDB
 image:
   path: /assets/img/mongoDB.png
 ---

@@ -3,7 +3,7 @@ layout: post
 title: '[MongoDB] 데이터베이스 연동'
 subtitle: '[MongoDB] 데이터베이스 연동'
 category: dev
-tags: mongo
+tags: mongoDB
 image:
   path: /assets/img/development/2022/09/28/mongoDB_database.png
 ---

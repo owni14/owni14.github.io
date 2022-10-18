@@ -38,6 +38,8 @@ image:
 - 이행(fulfilled) : 연산이 성공적으로 완료된 상태
 - 거부(rejected) : 연산이 실패한 상태
 
+![promise_image](/assets/img/development/2022/10/18/promise_image.png)
+
 ## Reference
 
 ---
