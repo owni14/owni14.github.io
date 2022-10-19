@@ -4,7 +4,7 @@ title: '[Node] 파일 업로드 시 사용되는 Multer'
 subtitle: '[Node] 파일 업로드 시 사용되는 Multer'
 category: dev
 tags: node
-published: false
+published: true
 image:
   path: /assets/img/node.png
 ---
@@ -27,7 +27,7 @@ Multer는 파일을 받아 request에 file이나 files를 추가하여 넘겨주
 
 ---
 
-Terminal에서 `npm install --save multer`를 이용해서 설치가 가능하며, package.json의 dependencies에서 설치된 버전을 확인할 수 있다.
+Terminal에서 `npm install --save multer`를 이용해서 설치가 가능하며, package.json의 dependencies에서 의존성이 제대로 추가 되었는지와 설치된 버전을 확인할 수 있다.
 
 ## Multer로 전달 가능한 옵션 객체
 
@@ -51,13 +51,38 @@ var storage = multer.diskStorage({  // 저장한공간 정보 : 하드디스크�
   destination: function (req, file, cb) { // 저장 위치
     cb(null, 'uploads/'); // uploads라는 폴더 안에 저장
   },
+
   filename: function (req, file, cb) {  // 파일명을 어떤 이름으로 올릴지
-    cb(null, `${Date.now()}_${file.originalname}`);
+    cb(null, `${Date.now()}_${file.originalname}`); // 날짜_파일이름으로 저장
   },
 });
 
 var upload = multer({ storage: storage }).single('file');
+
+router.post('/image', (req, res) => {
+  upload((req, res, err) => { // 가져온 이미지를 저장
+    if (err) {
+      return req.json({ success: false, err }); // 이미지 저장 실패시 success: false와 에러내용 출력
+    }
+    return res.json({ // 성공시 success: true와 파일경로, 이름을 출력
+      success: true,
+      filePath: res.req.file.path,
+      fileName: res.req.file.filename,
+    });
+  });
+});
 ```
+
+![uploads_folder](/assets/img/development/2022/10/18/uploads_folder.png)
+
+![image_in_uploads_folder](/assets/img/development/2022/10/18/image_in_uploads_folder.png)
+
+uploads의 폴더에 내가 multer를 이용해 업로드된 파일을 확인 할 수 있다.
+
+- **DiskStorage** : 파일을 디스크에 저장하기 위한 모든 제어 기능을 제공하는데 **destination**과 **filename** 두 가지 옵션 사용이 가능
+  - **destination** : 어느 폴더로 업로드 한 파일을 저장할지 결정. 만약 사용하지 않을 경우 운영체제 시스템에서 임시 파일을 저장하는 기본 디렉토리 사용
+  - **filename** : 파일명을 결정. 만약 사용하지 않을 경우 각각의 파일은 파일 확장자를 제외한 랜덤한 이름으로 생성
+- **single(fieldname)** : fieldname 인자에 명시된 이름의 단수 파일을 전달받고 req.file에 저장
 
 ## Reference
 
