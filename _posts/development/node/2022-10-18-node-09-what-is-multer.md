@@ -60,7 +60,9 @@ var storage = multer.diskStorage({  // 저장한공간 정보 : 하드디스크�
 var upload = multer({ storage: storage }).single('file');
 
 router.post('/image', (req, res) => {
-  upload((req, res, err) => { // 가져온 이미지를 저장
+  upload(req, res, (err) => { // 가져온 이미지를 저장
+    console.log('filePath: ', res.req.file.path);
+    console.log('fileName: ', res.req.file.filename);
     if (err) {
       return req.json({ success: false, err }); // 이미지 저장 실패시 success: false와 에러내용 출력
     }
@@ -75,9 +77,9 @@ router.post('/image', (req, res) => {
 
 ![uploads_folder](/assets/img/development/2022/10/18/uploads_folder.png)
 
-![image_in_uploads_folder](/assets/img/development/2022/10/18/image_in_uploads_folder.png)
+![filepath_name](/assets/img/development/2022/10/18/filepath_name.png)
 
-uploads의 폴더에 내가 multer를 이용해 업로드된 파일을 확인 할 수 있다.
+uploads의 폴더에 내가 multer를 이용해 업로드된 파일을 확인 할 수 있으며, `console.log`를 이용해 파일 경로와 이름을 확인할 수 있다.
 
 - **DiskStorage** : 파일을 디스크에 저장하기 위한 모든 제어 기능을 제공하는데 **destination**과 **filename** 두 가지 옵션 사용이 가능
   - **destination** : 어느 폴더로 업로드 한 파일을 저장할지 결정. 만약 사용하지 않을 경우 운영체제 시스템에서 임시 파일을 저장하는 기본 디렉토리 사용
