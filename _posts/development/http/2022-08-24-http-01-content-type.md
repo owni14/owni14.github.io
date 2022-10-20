@@ -5,7 +5,7 @@ subtitle: '[Http] ontent-Type'
 category: dev
 tags: http
 image:
-  path: /assets/img/http.png
+  path: /assets/img/http.jpeg
 ---
 
 <!-- prettier-ignore -->
