@@ -4,7 +4,7 @@ title: '[Http] HTTP 프로토콜의 정의 및 특징'
 subtitle: '[Http] HTTP 프로토콜의 정의 및 특징'
 category: dev
 tags: http
-published: true
+published: false
 image:
   path: /assets/img/http.jpeg
 ---
@@ -30,13 +30,15 @@ image:
 
 ### 1. 클라이언트 - 서버 구조
 
-클라이언트가 서버에 요청을 보내면 서버는 요청에 대한 응답을 보내는 구조로 이루어져있다.
+클라이언트가 서버에 요청을 보내면 서버는 요청에 대한 응답을 보내는 구조로 이루어져있다. 클라이언트 요청시 서버가 응답하는 **단방향 통신**이다.
 
 - Request Response 구조
 - 클라이언트는 서버에 요청을 보내고 응답을 대기
 - 서버가 요청에 대한 결과를 만들어 응답
 
 ![client-server](/assets/img/development/2022/10/20/client-server.png)
+
+### 2. 무상태 (Stateless)
 
 ## Reference
 
