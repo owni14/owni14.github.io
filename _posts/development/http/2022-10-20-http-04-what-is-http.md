@@ -4,7 +4,7 @@ title: '[Http] HTTP 프로토콜의 정의 및 특징'
 subtitle: '[Http] HTTP 프로토콜의 정의 및 특징'
 category: dev
 tags: http
-published: false
+published: true
 image:
   path: /assets/img/http.jpeg
 ---
@@ -38,7 +38,23 @@ image:
 
 ![client-server](/assets/img/development/2022/10/20/client-server.png)
 
-### 2. 무상태 (Stateless)
+### 2. 무상태 (Stateless) 와 상태 유지(Stateful)
+
+**무상태**라는 것은 서버가 클라이언트의 상태를 **보존하지 않는 것**이다. 이 말이 가지는 의미는 클라이언트가 보낸 이전 요청이 무엇인지에 따라 반응이 달라지지 않는다는 것이다.  
+무상태의 반대가 **상태 유지(Stateful)**인데 이 상태에서는 클라이언트에서 보낸 정보를 서버에서 **기억하고 있다.**
+
+- 상태 유지 (Stateful)
+
+  - 서버에서는 클라이언트에서 보낸 정보을 기억하고 있기 때문에 항상 **같은 서버에서 응답**해야한다.
+  - 서버에 장애 발생시, 항상 같은 서버에서 응답을 하고 있었기에 기억하고 있는 정보가 다 날아가 처음부터 서버에 **다시 요청**해야한다.
+
+- 무상태 (Stateless)
+
+  - 클라이언트가 필요한 정보를 다 담아서 보내기 때문에 **아무 서버나 호출**이 가능하다.
+  - 서버에 장애가 발생하더라도 다른 서버에서 요청에 대한 응답을 하면 되기 때문에 **다시 요청할 필요가 없다.**
+  - 응답 서버를 자유롭게 바꿀 수 있기 때문에 서버 증설이 가능하다.
+
+### 3. 비 연결성 (Connectionless)
 
 ## Reference
 
