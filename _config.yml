@@ -37,14 +37,14 @@ keywords: ['Development', 'JavaScript', 'Jekyll']
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo: /assets/img/me.jpg
+logo: /assets/img/me.jpeg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
   name: Minwoo Kim
   email: kmwoo514@gmail.com
-  picture: /assets/img/me.jpg
+  picture: /assets/img/me.jpeg
   social:
     instagram: ow.ni
     github: https://github.com/owni14
