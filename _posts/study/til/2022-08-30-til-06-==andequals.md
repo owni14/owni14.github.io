@@ -12,6 +12,8 @@ tags: til
 
 ## String 변수 생성시 주소
 
+---
+
 String변수 생성시 **리터럴 방식**으로 생성하는지 **`new`**라는 키워드를 사용해서 생성하는지에 따라 저장되는 영역이 달라진다.  
 리터럴 사용의 경우에는 **heap영역**안에 **string constant pool**이라는 영역에 생성된다. 그렇지만 `new`키워드를 사용해서 생성하게 될 경우 그냥 **heap**영역에 저장되게 된다.
 
@@ -21,6 +23,8 @@ String str2 = new String("hello"); // new연산자 방식
 ```
 
 ## == Operator vs equals Method
+
+---
 
 == 연산자와 equals 메서드는 모두 boolean값이 `true`나 `false`중 하나를 return하게 된다.
 
@@ -36,5 +40,7 @@ console.log(str1.equals(str2)) // true
 ```
 
 ## Reference
+
+---
 
 [https://coding-factory.tistory.com/536](https://coding-factory.tistory.com/536)
