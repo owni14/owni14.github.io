@@ -5,6 +5,8 @@ subtitle: '[Http] 쿠키(Cookie)와 세션(Session)의 정의 및 차이점'
 category: dev
 tags: http
 published: true
+image:
+  path: /assets/img/http.jpeg
 ---
 
 <!-- prettier-ignore -->
