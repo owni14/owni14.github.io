@@ -4,7 +4,7 @@ type: tag
 title: Javascript
 slug: js
 category: dev
-order: 2
+order: 4
 sidebar: true
 description: >
   Anything about Javascript

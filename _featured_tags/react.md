@@ -5,7 +5,7 @@ title: React
 slug: react
 category: dev
 sidebar: true
-order: 4
+order: 6
 description: >
   Anything about react
 ---

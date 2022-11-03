@@ -1,11 +1,11 @@
 ---
 layout: tag-list
 type: tag
-title: MongoDB
-slug: mongoDB
+title: Mysql
+slug: mysql
 category: dev
-order: 8
-sidebar: true
+order: 7
+sidebar: false
 description: >
   Anything about mongoDB
 ---
