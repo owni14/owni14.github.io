@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '[Http] HTTP통신과 SOCKET통신'
-subtitle: '[Http] HTTP통신과 SOCKET통신'
+title: '[Network / Http] HTTP통신과 SOCKET통신'
+subtitle: '[Network / Http] HTTP통신과 SOCKET통신'
 category: dev
-tags: http
+tags: network
 image:
   path: /assets/img/http.jpeg
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '[Http] 쿠키(Cookie)와 세션(Session)의 정의 및 차이점'
-subtitle: '[Http] 쿠키(Cookie)와 세션(Session)의 정의 및 차이점'
+title: '[Network / Http] 쿠키(Cookie)와 세션(Session)의 정의 및 차이점'
+subtitle: '[Network / Http] 쿠키(Cookie)와 세션(Session)의 정의 및 차이점'
 category: dev
-tags: http
+tags: network
 published: true
 image:
   path: /assets/img/http.jpeg

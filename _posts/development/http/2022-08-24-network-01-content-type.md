@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '[Http] Content-Type'
-subtitle: '[Http] ontent-Type'
+title: '[Network / Http] Content-Type'
+subtitle: '[Network / Http] ontent-Type'
 category: dev
-tags: http
+tags: network
 image:
   path: /assets/img/http.jpeg
 ---

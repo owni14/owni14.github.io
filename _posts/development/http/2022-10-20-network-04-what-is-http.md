@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '[Http] HTTP 프로토콜의 정의 및 특징'
-subtitle: '[Http] HTTP 프로토콜의 정의 및 특징'
+title: '[Network / Http] HTTP 프로토콜의 정의 및 특징'
+subtitle: '[Network / Http] HTTP 프로토콜의 정의 및 특징'
 category: dev
-tags: http
+tags: network
 published: true
 image:
   path: /assets/img/http.jpeg

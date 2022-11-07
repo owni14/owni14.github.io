@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '[Http] HTTP 상태 코드'
-subtitle: '[Http] HTTP 상태 코드'
+title: '[Network / Http] HTTP 상태 코드'
+subtitle: '[Network / Http] HTTP 상태 코드'
 category: dev
-tags: http
+tags: network
 image:
   path: /assets/img/http.jpeg
 ---

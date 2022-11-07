@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '[Http] JWT란?'
-subtitle: '[Http] JWT란?'
+title: '[Network / Http] JWT란?'
+subtitle: '[Network / Http] JWT란?'
 category: dev
-tags: http
+tags: network
 published: true
 image:
   path: /assets/img/http.jpeg
