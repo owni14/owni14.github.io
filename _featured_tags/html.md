@@ -5,7 +5,7 @@ title: Html
 slug: html
 category: dev
 order: 2
-sidebar: false
+sidebar: true
 description: >
   Anything about Html
 ---
