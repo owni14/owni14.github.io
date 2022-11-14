@@ -1,11 +1,11 @@
 ---
 layout: tag-list
 type: tag
-title: Git
-slug: git
+title: Python
+slug: python
 category: dev
-order: 10
+order: 8
 sidebar: true
 description: >
-  Anything about Git and Github
+  Anything about Python
 ---
