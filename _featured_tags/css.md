@@ -5,7 +5,7 @@ title: Css
 slug: css
 category: dev
 order: 3
-sidebar: false
+sidebar: true
 description: >
   Anything about Css
 ---
