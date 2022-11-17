@@ -138,7 +138,7 @@ main페이지와 login, register페이지를 이동하더라도 화면 상단에
 ---
 
 - useHistory()
-  - 스택에 현재까지 이동한 url 경로들이 담겨있는 형태로 주소를 임의로 변경하거나 되돌아갈 수 있도록 해준다.
+  - 스택에 현재까지 이동한 url 경로들이 담겨있는 형태로 주소를 임의로 변경하거나 되돌아갈 수 있도록 해줌
   - action: 최근에 수행된 action(push, pop,. replace)
     - push: 새로운 URL이 history에 추가, 새로운 주소로 이동할 때
     - pop: 새로운 URL이 history에 제거, 뒤로 가기
