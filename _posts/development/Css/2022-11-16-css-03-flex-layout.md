@@ -4,7 +4,7 @@ title: '[Css] Flex(Flexible Box)란?'
 subtitle: '[Css] Flex(Flexible Box)란?'
 category: dev
 tags: css
-published: false
+published: true
 image:
   path: /assets/img/css_logo.png
 ---
@@ -48,6 +48,13 @@ Flex에 대한 내용을 본격적으로 들어가기 전에 주 축과 교차 �
 
 - **flex** : `display:block`와 같은 성향을 가지고 있어 Flex Container가 **수직**으로 쌓인다.
 - **inline-flex** : `display:inline`와 같은 서향을 가지고 있어 Flex Container가 **수평**으로 쌓인다.
+- `display:flex`를 flex-box안 item들은 수평으로 배치
+
+![basic_layout](/assets/img/development/2022/11/16/basic_layout.png)
+
+![container](/assets/img/development/2022/11/16/container.png)
+
+![item_layout](/assets/img/development/2022/11/16/item_layout.png)
 
 ### flex-flow
 
