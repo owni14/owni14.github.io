@@ -1,32 +1,30 @@
 ---
-layout: null
+layout: none
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-        {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-        {% else %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.name | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+	<lastBuildDate>{% for post in site.posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
+	{% for post in site.posts limit:10 %}
+	<item>
+		<title>{{ post.title | xml_escape }}</title>
+        {% if post.author.name %}
+            <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
         {% endif %}
-
-        {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
+        {% if post.excerpt %}
+            <description>{{ post.excerpt | xml_escape }}</description>
         {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+            <description>{{ post.content | xml_escape }}</description>
         {% endif %}
-
-        {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
-        {% endif %}
-
-    </url>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <link>{{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+      </item>
     {% endfor %}
-</urlset>
+  </channel>
+</rss>
