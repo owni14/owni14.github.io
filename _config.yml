@@ -25,14 +25,14 @@ timezone: Asia/Seoul
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  It's Minwoo's Developer Blog
+  Front-end developer, Web developer, React, Next, Styled-components
 
 # A shorter description for the sidebar.
 tagline: >
   Try to be a thinking and doing hard developer 🧐
 
 # A list of keywords for your blog
-keywords: ['Development', 'JavaScript', 'Jekyll']
+keywords: ['Development', 'JavaScript', 'React.js', 'Front-end', 'Next.js']
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
