@@ -7,7 +7,6 @@ tags: react
 published: true
 image:
   path: /assets/img/react.png
-comments: true
 ---
 
 <!-- prettier-ignore -->
