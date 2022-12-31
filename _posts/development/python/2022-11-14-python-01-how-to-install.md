@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[Node] Mac에 Python 및 Django 설치 방법'
-subtitle: '[Node] Mac에 Python 및 Django 설치 방법'
+title: '[Python] Mac에 Python 및 Django 설치 방법'
+subtitle: '[Python] Mac에 Python 및 Django 설치 방법'
 category: dev
 tags: python
 image:

@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] 논리연산자, math함수, ??연산자'
-subtitle: '[til] 논리연산자, math함수, ??연산자'
-category: study
-tags: til
+title: '[TIL] 논리연산자, math함수, ??연산자'
+subtitle: '[TIL] 논리연산자, math함수, ??연산자'
+category: til
 ---
 
 <!-- prettier-ignore -->

@@ -1,10 +1,10 @@
 ---
 layout: list
 type: category
-title: Study
-slug: study
+title: TIL
+slug: til
 sidebar: true
 order: 4
 description: >
-  What did I learn and study.
+  What did I learn today
 ---

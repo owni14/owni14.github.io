@@ -25,7 +25,7 @@ timezone: Asia/Seoul
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description: >
-  Front-end developer, Web developer, React, Next, Styled-components
+  I'm a Junior Front-end Developer! I can use Javascript, React, Next.js, Styled-components, Tailwind CSS and a little Node.js
 
 # A shorter description for the sidebar.
 tagline: >
@@ -63,7 +63,7 @@ author:
 #     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2022. by [Min](https://owni14.github.io/)
+copyright: © 2023. All right reserved [Min](https://owni14.github.io/)
 
 # Format of the permalinks
 # permalink:             /blog/:categories/:year-:month-:day-:title/

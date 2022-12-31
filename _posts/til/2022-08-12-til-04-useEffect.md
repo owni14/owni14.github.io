@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] useEffect'
-subtitle: '[til] useEffect'
-category: study
-tags: til
+title: '[TIL] useEffect'
+subtitle: '[TIL] useEffect'
+category: til
 ---
 
 <!-- prettier-ignore -->

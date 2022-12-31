@@ -9,7 +9,7 @@ order: 1
 
 🙋‍♂️
 
-안녕하세요 소프트웨어 개발자 **김민우**입니다.  
+안녕하세요 프론트엔드 개발자 **김민우**입니다.  
 아직은 개발자로써 많이 부족하지만 긍정적인 마인드와 배움의 자세로 많은 것을  
 배우면서 기술 블로그를 채워나갈 수 있도록 하겠습니다. 🤗
 
@@ -23,4 +23,4 @@ order: 1
 
 ## Skills
 
-`Java` `HTML/CSS` `JavaScript` `JSP` `Oracle` `AJAX` `React` `node.js`
+`Java` `HTML/CSS` `JavaScript` `JSP` `Oracle` `AJAX` `React` `node.js` `next.js` `styled-components` `Tailwind CSS`

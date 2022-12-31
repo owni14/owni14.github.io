@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] MIME, Text-transform, Filter, Optional-Chaining'
-subtitle: '[til] MIME, Text-transform, Filter, Optional-Chaining'
-category: study
-tags: til
+title: '[TIL] MIME, Text-transform, Filter, Optional-Chaining'
+subtitle: '[TIL] MIME, Text-transform, Filter, Optional-Chaining'
+category: til
 ---
 
 <!-- prettier-ignore -->

@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] Mac에 MySql설치'
-subtitle: '[til] Mac에 MySql설치'
-category: study
-tags: til
+title: '[TIL] Mac에 MySql설치'
+subtitle: '[TIL] Mac에 MySql설치'
+category: til
 image:
   path: /assets/img/mySQL-Logo.png
 ---

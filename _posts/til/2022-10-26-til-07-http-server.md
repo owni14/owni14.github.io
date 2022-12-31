@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] http로 서버로 띄우기'
-subtitle: '[til] http로 서버 띄우기'
-category: study
-tags: til
+title: '[TIL] http로 서버로 띄우기'
+subtitle: '[TIL] http로 서버 띄우기'
+category: til
 ---
 
 <!-- prettier-ignore -->

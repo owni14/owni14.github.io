@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[error] 아이피변경에 따른 MongoDB연결 에러'
-subtitle: '[error] 아이피변경에 따른 MongoDB연결 에러'
-category: study
-tags: err
+title: '[Issues] 아이피변경에 따른 MongoDB연결 에러'
+subtitle: '[Issues] 아이피변경에 따른 MongoDB연결 에러'
+category: issues
 ---
 
 <!-- prettier-ignore -->

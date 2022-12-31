@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] replace, 정규표현식, indexOf'
-subtitle: '[til] replace, 정규표현식, indexOf'
-category: study
-tags: til
+title: '[TIL] replace, 정규표현식, indexOf'
+subtitle: '[TIL] replace, 정규표현식, indexOf'
+category: til
 ---
 
 <!-- prettier-ignore -->

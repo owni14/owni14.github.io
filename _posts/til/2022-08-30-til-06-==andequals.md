@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] == Operator Vs equals Method'
-subtitle: '[til] Operator Vs equals Method'
-category: study
-tags: til
+title: '[TIL] == Operator Vs equals Method'
+subtitle: '[TIL] Operator Vs equals Method'
+category: til
 ---
 
 <!-- prettier-ignore -->

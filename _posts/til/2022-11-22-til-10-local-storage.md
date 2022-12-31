@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] localStorage를 이용해 로그인 유지'
-subtitle: '[til] localStorage를 이용해 로그인 유지'
-category: study
-tags: til
+title: '[TIL] localStorage를 이용해 로그인 유지'
+subtitle: '[TIL] localStorage를 이용해 로그인 유지'
+category: til
 ---
 
 <!-- prettier-ignore -->

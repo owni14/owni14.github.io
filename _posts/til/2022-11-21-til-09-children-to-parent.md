@@ -1,9 +1,8 @@
 ---
 layout: post
-title: '[til] 자식 -> 부모, 부모 -> 자식 컴포넌트로 값 전달'
-subtitle: '[til] 자식 -> 부모, 부모 -> 자식 컴포넌트로 값 전달'
-category: study
-tags: til
+title: '[TIL] 자식 -> 부모, 부모 -> 자식 컴포넌트로 값 전달'
+subtitle: '[TIL] 자식 -> 부모, 부모 -> 자식 컴포넌트로 값 전달'
+category: til
 ---
 
 <!-- prettier-ignore -->
