@@ -9,7 +9,7 @@ order: 1
 
 <!--about -->
 
-## Hello, Guys! 🙋
+## Hello, Guys! 🙋‍♂️
 
 **Welcome** to visit my technology blog!  
 I'm **Minwoo Kim** from South Korea and working as a Junior Front End developer  
