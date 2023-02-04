@@ -1,11 +1,11 @@
 ---
 layout: tag-list
 type: tag
-title: Etc
-slug: etc
+title: Algorithm
+slug: algorithm
 category: dev
-order: 12
 sidebar: true
+order: 11
 description: >
-  Anything about development knowledge
+  Anything about coding test
 ---
