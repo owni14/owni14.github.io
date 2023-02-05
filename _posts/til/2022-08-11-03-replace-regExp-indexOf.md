@@ -3,6 +3,8 @@ layout: post
 title: '[TIL] replace, 정규표현식, indexOf'
 subtitle: '[TIL] replace, 정규표현식, indexOf'
 category: til
+image:
+  path: /assets/img/til.png
 ---
 
 <!-- prettier-ignore -->

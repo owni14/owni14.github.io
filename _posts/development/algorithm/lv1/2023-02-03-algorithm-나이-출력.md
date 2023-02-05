@@ -4,6 +4,8 @@ title: '[프로그래머스 / lv0] 나이 출력'
 subtitle: '[프로그래머스 / lv0] 나이 출력'
 category: dev
 tag: algorithm
+image:
+  path: /assets/img/algorithm.png
 ---
 
 <!-- prettier-ignore -->

@@ -3,6 +3,8 @@ layout: post
 title: '[TIL] 자식 -> 부모, 부모 -> 자식 컴포넌트로 값 전달'
 subtitle: '[TIL] 자식 -> 부모, 부모 -> 자식 컴포넌트로 값 전달'
 category: til
+image:
+  path: /assets/img/til.png
 ---
 
 <!-- prettier-ignore -->

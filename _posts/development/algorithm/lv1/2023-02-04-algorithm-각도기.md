@@ -4,6 +4,8 @@ title: '[프로그래머스 / lv0] 각도기'
 subtitle: '[프로그래머스 / lv0] 각도기'
 category: dev
 tag: algorithm
+image:
+  path: /assets/img/algorithm.png
 ---
 
 <!-- prettier-ignore -->

@@ -4,6 +4,8 @@ title: '[Diary] 국비지원을 통한 Java 교육과정 수료 후'
 subtitle: '[Diary] 국비지원을 통한 Java 교육과정 수료 후'
 category: life
 tags: diary
+image:
+  path: /assets/img/diary.png
 ---
 
 <!-- prettier-ignore -->

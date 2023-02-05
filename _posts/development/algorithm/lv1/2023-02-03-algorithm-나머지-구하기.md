@@ -4,6 +4,8 @@ title: '[프로그래머스 / lv0] 나머지 구하기'
 subtitle: '[프로그래머스 / lv0] 나머지 구하기'
 category: dev
 tag: algorithm
+image:
+  path: /assets/img/algorithm.png
 ---
 
 <!-- prettier-ignore -->

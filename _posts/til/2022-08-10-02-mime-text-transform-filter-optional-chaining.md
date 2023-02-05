@@ -3,6 +3,8 @@ layout: post
 title: '[TIL] MIME, Text-transform, Filter, Optional-Chaining'
 subtitle: '[TIL] MIME, Text-transform, Filter, Optional-Chaining'
 category: til
+image:
+  path: /assets/img/til.png
 ---
 
 <!-- prettier-ignore -->

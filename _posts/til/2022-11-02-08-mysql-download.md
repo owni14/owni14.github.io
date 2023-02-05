@@ -4,7 +4,7 @@ title: '[TIL] Mac에 MySql설치'
 subtitle: '[TIL] Mac에 MySql설치'
 category: til
 image:
-  path: /assets/img/mySQL-Logo.png
+  path: /assets/img/til.png
 ---
 
 <!-- prettier-ignore -->

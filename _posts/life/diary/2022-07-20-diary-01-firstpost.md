@@ -4,6 +4,8 @@ title: '[Diary] 블로그 시작'
 subtitle: '[Diary] 블로그 시작'
 category: life
 tags: diary
+image:
+  path: /assets/img/diary.png
 ---
 
 <!-- prettier-ignore -->

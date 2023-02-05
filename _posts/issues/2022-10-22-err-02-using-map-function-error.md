@@ -4,7 +4,7 @@ title: '[Issues] map 함수 사용에 따른 에러'
 subtitle: '[Issues] map 함수 사용에 따른 에러'
 category: issues
 image:
-  path: /assets/img/development/2022/10/22/using_map_function_wrong.png
+  path: /assets/img/issues.png
 ---
 
 <!-- prettier-ignore -->

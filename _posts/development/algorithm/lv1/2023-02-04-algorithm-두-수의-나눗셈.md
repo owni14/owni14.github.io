@@ -4,6 +4,8 @@ title: '[프로그래머스 / lv0] 두 수의 나눗셈'
 subtitle: '[프로그래머스 / lv0] 두 수의 나눗셈'
 category: dev
 tag: algorithm
+image:
+  path: /assets/img/algorithm.png
 ---
 
 <!-- prettier-ignore -->

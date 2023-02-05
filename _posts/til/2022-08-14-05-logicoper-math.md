@@ -3,6 +3,8 @@ layout: post
 title: '[TIL] 논리연산자, math함수, ??연산자'
 subtitle: '[TIL] 논리연산자, math함수, ??연산자'
 category: til
+image:
+  path: /assets/img/til.png
 ---
 
 <!-- prettier-ignore -->

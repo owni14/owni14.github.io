@@ -3,6 +3,8 @@ layout: post
 title: '[Issues] 아이피변경에 따른 MongoDB연결 에러'
 subtitle: '[Issues] 아이피변경에 따른 MongoDB연결 에러'
 category: issues
+image:
+  path: /assets/img/issues.png
 ---
 
 <!-- prettier-ignore -->

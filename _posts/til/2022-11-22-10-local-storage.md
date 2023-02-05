@@ -3,6 +3,8 @@ layout: post
 title: '[TIL] localStorage를 이용해 로그인 유지'
 subtitle: '[TIL] localStorage를 이용해 로그인 유지'
 category: til
+image:
+  path: /assets/img/til.png
 ---
 
 <!-- prettier-ignore -->
