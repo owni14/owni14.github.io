@@ -7,5 +7,5 @@ category: dev
 sidebar: true
 order: 11
 description: >
-  Anything about coding test
+  Anything about algorithm
 ---
