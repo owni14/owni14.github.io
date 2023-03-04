@@ -29,11 +29,9 @@ hy-drawer {
   display: block;
   z-index: 4;
   @media screen {
-
   }
 
   @media screen and (min-width: $break-point-3) {
-
     position: fixed;
     width: $sidebar-width;
     top: 0;
@@ -45,55 +43,39 @@ hy-drawer {
       position: relative;
       width: 100%;
     }
-
-
-
   }
 
   @media screen and (min-width: $break-point-dynamic) {
     width: calc(50% - #{$half-content});
-
-
   }
-
-
 }
 
 .sidebar {
-
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, 0.75);
   text-align: center;
   min-height: 100vh;
-  &.invert { color: rgba(32, 32, 32, .75) }
-
+  &.invert {
+    color: rgba(32, 32, 32, 0.75);
+  }
 
   a {
-
     color: #fff;
     border-bottom-color: rgba(255, 255, 255, 0.2);
     text-decoration-color: rgba(255, 255, 255, 0.2);
-
-
   }
 
   &.invert a {
-
     color: #222;
     border-bottom-color: rgba(32, 32, 32, 0.2);
     text-decoration-color: rgba(32, 32, 32, 0.2);
-
-
   }
 }
 
-
-
 .sidebar-bg {
-
   position: absolute;
   top: 0;
   left: calc(50% - 50vw);
@@ -111,14 +93,17 @@ hy-drawer {
     background: rgba(0, 0, 0, 0.05);
   }
 
-
   &.sidebar-overlay::after {
-//     background: -moz-linear-gradient(top, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%);
-//     background: -webkit-linear-gradient(top, rgba(32,32,32,0) 0%,rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%);
-    background: linear-gradient(to bottom, rgba(32,32,32,0) 0%,rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%);
+    //     background: -moz-linear-gradient(top, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%);
+    //     background: -webkit-linear-gradient(top, rgba(32,32,32,0) 0%,rgba(32,32,32,0.5) 50%, rgba(32,32,32,0) 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(32, 32, 32, 0) 0%,
+      rgba(32, 32, 32, 0.5) 50%,
+      rgba(32, 32, 32, 0) 100%
+    );
   }
 }
-
 
 .sidebar-sticky {
   position: relative;
@@ -130,21 +115,21 @@ hy-drawer {
 
 .sidebar-about {
   .avatar {
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
   }
 
   > a.sidebar-title {
     text-decoration: none;
     > h2 {
       margin: 0;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       border-bottom: 2px solid;
-      margin: 0 auto .5rem;
+      margin: 0 auto 0.5rem;
       width: 4rem;
       border-color: rgba(255, 255, 255, 0.2);
       transition: border-color 250ms;
@@ -157,9 +142,13 @@ hy-drawer {
   }
 }
 
-.sidebar.invert .sidebar-about > a.sidebar-title{
-  &::after { border-color: rgba(32, 32, 32, 0.2) }
-  &:hover::after { border-color: #222 }
+.sidebar.invert .sidebar-about > a.sidebar-title {
+  &::after {
+    border-color: rgba(32, 32, 32, 0.2);
+  }
+  &:hover::after {
+    border-color: #222;
+  }
 }
 
 .sidebar-nav > ul {
@@ -170,12 +159,16 @@ hy-drawer {
 .sidebar-nav-item {
   @extend .f4;
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 #_main.no-drawer {
   @media (min-width: $break-point-3) {
-    #_menu { display: none }
-    .nav-btn-bar > :nth-child(2) { border: none }
+    #_menu {
+      display: none;
+    }
+    .nav-btn-bar > :nth-child(2) {
+      border: none;
+    }
   }
 }
