@@ -32,6 +32,7 @@
   height: 100%;
   padding-top: 5%;
   position: fixed;
+  overflow-y: scroll;
 }
 
 .sidebar-nav-item {
@@ -120,17 +121,17 @@ hy-push-state a {
   font-size: 29px;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
 }
 
-input[type='checkbox'] ~ ul {
+input[type="checkbox"] ~ ul {
   height: 0;
   transform: scaleY(0);
   transition: transform 0.2s ease-out;
 }
 
-input[type='checkbox']:checked ~ ul {
+input[type="checkbox"]:checked ~ ul {
   height: 100%;
   list-style: none;
   transform-origin: top;
