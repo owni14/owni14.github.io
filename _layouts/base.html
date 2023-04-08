@@ -17,16 +17,21 @@
 layout: compress
 ---
 
-{% assign plugins = site.plugins | default:site.gems %}
-
-{% assign author = site.data.authors[page.author] | default:site.data.authors.first[1] | default:site.author %}
-
-{% assign image       = page.accent_image | default:site.accent_image | default:'/assets/img/sidebar-bg.jpg' %}
-{% assign color       = page.accent_color | default:site.accent_color | default:'rgb(79,177,186)' %}
-{% assign theme_color = page.theme_color  | default:site.theme_color  | default:'rgb(8,46,57)' %}
+{% assign plugins = site.plugins | default:site.gems %} {% assign author =
+site.data.authors[page.author] | default:site.data.authors.first[1] |
+default:site.author %} {% assign image = page.accent_image |
+default:site.accent_image | default:'/assets/img/sidebar-bg.jpg' %} {% assign
+color = page.accent_color | default:site.accent_color |
+default:'rgb(79,177,186)' %} {% assign theme_color = page.theme_color |
+default:site.theme_color | default:'rgb(8,46,57)' %}
 
 <head>
   {% include head/index.html %}
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2597316444912787"
+    crossorigin="anonymous"
+  ></script>
 </head>
 
 <body class="{% include_cached base-classes %}">
