@@ -26,7 +26,7 @@ image:
 
 - 2 ≤ `num_list`의 길이 ≤ 30
 - 1 ≤ `num_list`의 원소 ≤ 9
-- 1 ≤ `n` ≤ `num_list`의 길이 \_\_\_
+- 1 ≤ `n` ≤ `num_list`의 길이
 
 ### 입출력 예
 

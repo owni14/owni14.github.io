@@ -55,7 +55,7 @@ image:
 
 ```jsx
 function solution(flo) {
-  return Number(Math.floor(flo));
+  return Math.floor(flo);
 }
 ```
 
