@@ -9,7 +9,7 @@
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
+# GNU General Public License for more de[tai]ls.
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
@@ -17,29 +17,17 @@
 layout: base
 ---
 
-{% assign version = jekyll.version | split:'.' %}
-{% assign major = version[0] | plus:0 %}
-{% assign minor = version[1] | plus:0 %}
-{% assign patch = version[2] | plus:0 %}
-
-{% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image hide_description=page.hide_description %}
-
-{% include components/dingbat.html %}
-
-{% assign addons = page.addons | default:site.hydejack.post_addons %}
-{% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
-{% for addon in addons %}
-  {% case addon %}
-  {% when 'about' %}
-     {% include_cached components/about.html author=page.author %}
-  {% when 'newsletter' %}
-    {% include if-non-null try="pro/newsletter.html" %}
-  {% when 'related' %}
-    {% include if-non-null try="pro/related-posts.html" fallback="components/related-posts.html" %}
-  {% when 'random' %}
-    {% include if-non-null try="pro/random-posts.html" %}
-  {% when 'comments' %}
-    {% include body/comments.html %}
-  {% else %}
-  {% endcase %}
-{% endfor %}
+{% assign version = jekyll.version | split:'.' %} {% assign major = version[0] |
+plus:0 %} {% assign minor = version[1] | plus:0 %} {% assign patch = version[2]
+| plus:0 %} {% include_cached components/post.html post=page no_link_title=true
+no_excerpt=true hide_image=page.hide_image
+hide_description=page.hide_description %} {% include components/dingbat.html %}
+{% assign addons = page.addons | default:site.hydejack.post_addons %} {% unless
+addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{%
+endunless %} {% for addon in addons %} {% case addon %} {% when 'about' %} {%
+include_cached components/about.html author=page.author %} {% when 'newsletter'
+%} {% include if-non-null try="pro/newsletter.html" %} {% when 'related' %} {%
+include if-non-null try="pro/related-posts.html"
+fallback="components/related-posts.html" %} {% when 'random' %} {% include
+if-non-null try="pro/random-posts.html" %} {% when 'comments' %} {% include
+body/comments.html %} {% else %} {% endcase %} {% endfor %}
