@@ -9,6 +9,7 @@ source 'https://rubygems.org'
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 3.9"
+gem 'liquid', '~> 4.0', '>= 4.0.4'
 
 group :jekyll_plugins do
   gem 'github-pages'
