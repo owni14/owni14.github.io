@@ -6,6 +6,7 @@ category: life
 tags: diary
 image:
   path: /assets/img/diary.png
+published: false
 ---
 
 <!-- prettier-ignore -->

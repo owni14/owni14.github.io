@@ -32,7 +32,7 @@ tagline: >
   Try to be a thinking and doing hard developer 🧐
 
 # A list of keywords for your blog
-keywords: ["Development", "JavaScript", "React.js", "Front-end", "Next.js"]
+keywords: ['Development', 'JavaScript', 'React.js', 'Front-end', 'Next.js']
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -63,7 +63,7 @@ author:
 #     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright: © 2023. All right reserved [Min](https://owni14.github.io/)
+copyright: © 2024. All right reserved [Min](https://owni14.github.io/)
 
 # Format of the permalinks
 # permalink:             /blog/:categories/:year-:month-:day-:title/
@@ -179,7 +179,7 @@ defaults:
 kramdown:
   input: GFM
   math_engine_opts: {}
-  footnote_backlink: "&#x21a9;&#xfe0e;"
+  footnote_backlink: '&#x21a9;&#xfe0e;'
   # hard_wrap:           true  # Setting it to `true` will interprets line breaks literally from the markdown file.
 
 # 3rd Party Integrations
@@ -211,17 +211,17 @@ comments:
 # Make sure all variables are set properly. Check below link for detail.
 # https://giscus.vercel.app/
 giscus:
-  repo: "owni14/owni14.github.io"
-  repo-id: "R_kgDOHrsZzw"
-  category: "General"
-  category-id: "DIC_kwDOHrsZz84CQUpp"
-  mapping: "pathname"
-  reaction-enabled: "1"
-  data-emit-metadata: "0"
-  position: "top"
-  theme: "light"
-  data-lang: "ko"
-  crossorigin: "anonymous"
+  repo: 'owni14/owni14.github.io'
+  repo-id: 'R_kgDOHrsZzw'
+  category: 'General'
+  category-id: 'DIC_kwDOHrsZz84CQUpp'
+  mapping: 'pathname'
+  reaction-enabled: '1'
+  data-emit-metadata: '0'
+  position: 'top'
+  theme: 'light'
+  data-lang: 'ko'
+  crossorigin: 'anonymous'
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # PRO version only!
@@ -319,7 +319,7 @@ hydejack:
     always: false
 
     # Set to `true` to use the dark theme based on visitors' preference (OS setting).
-    dynamic: false
+    dynamic: true
 
     # Set to `true` to allow visitors to switch between light and dark mode.
     icon: true
@@ -356,7 +356,7 @@ collections:
 exclude:
   - .jekyll-cache
   - .sass-cache
-  - "*.toml"
+  - '*.toml'
   - vendor
   - Gemfile
   - Gemfile.lock
@@ -388,7 +388,7 @@ plugins:
 # ---------------------------------------------------------------------------------------
 
 # Where you proof that you own this site (used by jekyll-seo-tag)
-google_site_verification: "6CKzmA9wscpeDNGzaw4JzP-rJxN6bJwrB0Ya-V7O-Hw"
+google_site_verification: '6CKzmA9wscpeDNGzaw4JzP-rJxN6bJwrB0Ya-V7O-Hw'
 # -- or --
 # webmaster_verifications:
 #   google:              <verification-id>
@@ -431,7 +431,7 @@ titles_from_headings:
   collections: true
 
 compress_html:
-  comments: ["<!-- ", " -->"]
+  comments: ['<!-- ', ' -->']
   clippings: all
   endings: all
   ignore:

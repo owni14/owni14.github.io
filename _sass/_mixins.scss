@@ -35,7 +35,7 @@
 
   &::before {
     display: block;
-    content: "";
+    content: '';
     width: 100%;
     padding-top: ($height / $width) * 100%;
   }
@@ -50,7 +50,7 @@
 }
 
 .clearfix {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }

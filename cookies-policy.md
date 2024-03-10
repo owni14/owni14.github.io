@@ -37,6 +37,6 @@ For further information on Google Analytics and its use of cookies, please consu
 ## How long do cookies last?
 
 All cookies have expiration dates that determine how long they stay in your browser:
-*Session Cookies* – these are temporary cookies that expire (and are automatically erased) whenever you close your browser.
-*Persistent Cookies* – these usually have an expiration date and so stay in your browser until they expire, or until you manually delete them.
+_Session Cookies_ – these are temporary cookies that expire (and are automatically erased) whenever you close your browser.
+_Persistent Cookies_ – these usually have an expiration date and so stay in your browser until they expire, or until you manually delete them.
 More information is provided below about how long cookies from our Site stay in your browser.
