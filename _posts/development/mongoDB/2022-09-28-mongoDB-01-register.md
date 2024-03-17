@@ -6,6 +6,7 @@ category: dev
 tags: mongoDB
 image:
   path: /assets/img/mongoDB.png
+published: false
 ---
 
 <!-- prettier-ignore -->

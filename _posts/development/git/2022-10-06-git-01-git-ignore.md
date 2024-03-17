@@ -25,7 +25,6 @@ gitignore은 원격저장소인 Git에 필요없는 파일들은 무시해서 �
 
 gitignore을 사용하기 위해서는 .gitignore파일을 생성해야한다.  
 아래와 같이 .gitignore파일을 생성하고 자신이 올리면 안되는 파일이나 폴더를 작성해주면 된다.
-![gitignore](/assets/img/development/2022-10-06/gitignore.png)
 
 ## Reference
 

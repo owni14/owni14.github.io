@@ -1,9 +1,9 @@
 ---
 layout: post
-title: '[Etc] API, REST, RESTFUL API에 대하여'
-subtitle: '[Etc] API, REST, RESTFUL API에 대하여'
+title: '[Network / Http] API, REST, RESTFUL API에 대하여'
+subtitle: '[Network / Http] API, REST, RESTFUL API에 대하여'
 category: dev
-tags: etc
+tags: newtwork
 image:
   path: /assets/img/development/2022/10/10/api.png
 ---

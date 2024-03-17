@@ -6,6 +6,7 @@ category: dev
 tags: mongoDB
 image:
   path: /assets/img/development/2022/09/28/mongoDB_database.png
+  published: false
 ---
 
 <!-- prettier-ignore -->
