@@ -1,7 +1,7 @@
 ---
 layout: post
-title: '[React] TDD를 활용한 Todo list 만들기(1)'
-subtitle: '[React] TDD를 활용한 Todo list 만들기(1)'
+title: '[React] TDD를 활용한 Todo list 만들기(초기 세팅)'
+subtitle: '[React] TDD를 활용한 Todo list 만들기(초기 세팅)'
 category: dev
 tags: react
 published: true
@@ -37,8 +37,46 @@ TDD는 하는데는 순서가 있다. 먼저 실패하는 테스트 코드를 �
 ---
 
 1. `npx create-react-app my-app --template typescript` 리액트 프로젝트를 먼저 생성한다.
-2. `npm i node-sass` 나는 scss를 이용해 스타일을 진행할 예정이다.
-3. `npm install react-icons --save` list를 지울때는 icon을 사용할꺼기 때문에 react icon을 설치해준다.
+2. `npm install --save-dev jest` devDependencies에 jest도 함께 설치해준다.
+3. `npm i node-sass` 나는 scss를 이용해 스타일을 진행할 예정이다.
+4. `npm i dayjs` 오늘 날짜를 가져오고 날짜를 손쉽게 하기 위한 라이브러리를 설치해준다.
+5. `npm i classnames` 조건부로 클래스를 주고 싶기 때문에 해당 라이브러리도 함께 설치한다.
+6. `npm install react-icons --save` list를 지울때는 icon을 사용할꺼기 때문에 react icon을 설치해준다.
+7. `npm install --save-dev @babel/preset-env @babel/preset-typescript` 나는 타입스크립트를 사용하기 때문에 사전 설정을 함께 해준다.
+
+## 폴더 구조
+
+---
+
+```
+├─ node_modules
+├─ public
+├─ src
+│  ├─ App.tsx
+│  ├─ app.scss
+│  ├─ components
+│  │  ├─ TodoListForm.tsx
+│  │  ├─ TodoListHeader.tsx
+│  │  └─ TodoListItems.tsx
+│  ├─ index.tsx
+│  ├─ styles
+│  │  ├─ global.scss
+│  │  └─ reset.scss
+│  ├─ tests
+│  │  ├─ TodoListForm.test.tsx
+│  │  ├─ TodoListHeader.test.tsx
+│  │  └─ TodoListItem.test.tsx
+│  └─ type.ts
+├─ .gitignroe
+├─ .prettierrc
+├─ .babel.config.js
+├─ .package-lock.json
+├─ .package.json
+├─ .README.md
+├─ .tsconfig.json
+```
+
+전체적인 폴더구조는 위와 같이 설계를 하였다. 먼저 components에 todo list 상단 부분인 `TodoListHeader`, 입력과 버튼이 있는 `TodoListForm`, 리스트를 보여주는 `TodoListItems`부분으로 나눴고 tests폴더에도 동일하게 구조를 나눠놨다. 그리고 styles같은 경우 초기에 설정만 해놓고 각 컴포넌트별로 스타일을 구분하지 않고 `app.scss`에 모든 스타일을 같이 사용했다.
 
 ## UI 구현
 
