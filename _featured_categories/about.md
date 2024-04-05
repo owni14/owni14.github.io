@@ -13,4 +13,4 @@ order: 1
 
 **Welcome** to visit my technology blog!  
 I'm **Minwoo Kim** from South Korea and working as a Junior Front End developer  
-I can use React, Next.js, Raect-Native, tailwind CSS etc.. If you want to look more informaton about me, You can check [**Min's Portfolio**](https://mins-portfolio.vercel.app/) as just visiting
+I can use React, Next.js, Raect-Native, tailwind CSS etc.. If you want to look more informaton about me, You can check [**Min's Portfolio**](https://owni14.me) as just visiting
