@@ -25,6 +25,8 @@ Write a function expect that helps developers test their code. It should take in
 
 ### **Example**
 
+---
+
 Example 1:
 
 > Input: func = () => expect(5).toBe(5)  
@@ -42,8 +44,6 @@ Example 3:
 > Input: func = () => expect(5).notToBe(null)  
 > Output: {"value": true}  
 > Explanation: 5 !== null so this expression returns true.
-
----
 
 ### Solution
 

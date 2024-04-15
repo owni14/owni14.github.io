@@ -28,6 +28,8 @@ The three functions are:
 
 ### **Example**
 
+---
+
 Example 1:
 
 > Input: init = 5, calls = ["increment","reset","decrement"]  
@@ -49,8 +51,6 @@ Example 2:
 > counter.decrement(); // 1  
 > counter.reset(); // 0  
 > counter.reset(); // 0
-
----
 
 ### Solution
 

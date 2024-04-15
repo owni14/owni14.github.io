@@ -22,6 +22,8 @@ Write a function createHelloWorld. It should return a new function that always r
 
 ### **Example**
 
+---
+
 Example 1:
 
 > Input: args = []  
@@ -41,8 +43,6 @@ Example 2:
 > f({}, null, 42); // "Hello World"
 >
 > Any arguments could be passed to the function but it should still always return "Hello World".
-
----
 
 ### **Constraints**
 
