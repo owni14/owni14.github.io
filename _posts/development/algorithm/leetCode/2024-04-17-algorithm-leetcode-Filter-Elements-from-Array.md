@@ -31,6 +31,8 @@ Please solve it without the built-in Array.filter method.
 
 ### **Example**
 
+---
+
 Example 1:
 
 > Input: arr = [0,10,20,30], fn = function greaterThan10(n) { return n > 10; }

@@ -22,6 +22,8 @@ Write a function argumentsLength that returns the count of arguments passed to i
 
 ### **Example**
 
+---
+
 Example 1:
 
 > Input: args = [5]  
