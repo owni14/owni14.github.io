@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm build
+      - name: 글 HTML에 본문이 들어 있는지 확인
+        run: |
+          # 첫 글의 주소와 제목을 빌드 산출물(검색 인덱스)에서 읽어 검사한다
+          permalink=$(node -e "console.log(require('./out/search-index.json')[0].permalink)")
+          title=$(node -e "console.log(require('./out/search-index.json')[0].title)")
+          f="out${permalink}.html"
+          test -f "$f"
+          grep -q "$title" "$f"
+          grep -q 'application/ld+json' "$f"
+          grep -q '"@type":"BlogPosting"' "$f"
+          ! grep -q 'googletagmanager' "$f"
+          test -f out/rss.xml
+          test -f out/sitemap.xml

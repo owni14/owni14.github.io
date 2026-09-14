@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# owni14.github.io
 
-## Getting Started
+자기소개와 블로그. https://owni14.github.io
 
-First, run the development server:
+Next.js 16 정적 내보내기, MDX + Velite, Tailwind CSS 4.
+
+## 실행
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev        # next dev (velite 감시 빌드 포함)
+pnpm build      # next build → out/ (velite 빌드 포함, 타입 검사 포함)
+pnpm typecheck  # velite build + next typegen + tsc
+pnpm lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+환경변수는 `.env.example` 참고. 로컬은 `.env.local`, 배포는 GitHub Actions 저장소 변수.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 글 쓰기
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`content/posts/<category>/<subcategory>/<slug>.mdx`
 
-## Learn More
+```mdx
+---
+title: 글 제목
+description: 목록·검색·SEO에 쓰이는 한두 문장 요약 (필수)
+date: 2026-09-14
+draft: false
+---
+```
 
-To learn more about Next.js, take a look at the following resources:
+- 분류는 폴더 경로로 정한다. `content/posts/web/javascript/foo.mdx` → `/posts/web/javascript/foo`, 화면에는 `Web › JavaScript`.
+- 카테고리와 소분류는 `src/lib/categories.ts`에 정의된 값만 허용하며, 그 파일의 순서가 화면 순서다. 새 분류는 그 파일에만 추가하면 된다.
+- 소분류는 필수다. 글이 없는 분류는 메뉴에 나오지 않는다.
+- `draft: true`면 빌드에서 제외.
+- 본문에서 `<Summary>`, `<Callout>` 컴포넌트를 쓸 수 있다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+프로필·경력은 `content/site.yml`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 배포
 
-## Deploy on Vercel
+`main`에 푸시하면 GitHub Actions가 빌드해 GitHub Pages로 배포한다. 검색 인덱스(`/search-index.json`), RSS(`/rss.xml`), 사이트맵, robots는 빌드 때 생성된다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+계획서: `docs/PLAN.md`

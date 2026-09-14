@@ -1,0 +1,15 @@
+name: '@owni14'
+tagline: 소프트웨어 개발자
+intro: |
+  개발자입니다.
+links:
+  github: https://github.com/owni14
+  email: kmwoo514@gmail.com
+experience:
+  - company: Embrace
+    url: https://embracelabs.com/
+    role: 프론트엔드 웹 개발자
+    start: 2023-04
+    location: 서울
+    summary: React로 티빙 백오피스(B2B) 프론트엔드를 개발하고 있습니다.
+    highlights: []

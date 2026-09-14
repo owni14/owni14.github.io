@@ -1,26 +1,218 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import './fonts.css';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-*: initial;
+  --color-bg: #ffffff;
+  --color-soft: #f6f6f4;
+  --color-line: #eaeae6;
+  --color-fg: #1a1a18;
+  --color-muted: #6f6c66;
+  --color-faint: #a8a49c;
+
+  --font-sans: 'Pretendard Variable', 'Apple SD Gothic Neo', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      animation: none !important;
+    }
+  }
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    font-size: var(--text-base);
+    line-height: 1.75;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    font-feature-settings: 'ss05';
+  }
+  a {
+    @apply text-fg decoration-faint underline decoration-1 underline-offset-[3px] transition-colors;
+  }
+  a:hover,
+  a:focus-visible {
+    @apply decoration-fg;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-fg);
+    outline-offset: 2px;
+  }
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+  ::selection {
+    @apply bg-line;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* 글 본문 */
+.prose {
+  font-size: var(--text-base);
+}
+.prose > * + * {
+  margin-top: 1.25em;
+}
+.prose h2 {
+  @apply mt-14 text-xl font-semibold;
+}
+.prose h3 {
+  @apply mt-10 text-lg font-semibold;
+}
+.prose h2 a,
+.prose h3 a {
+  @apply no-underline;
+}
+.prose h2 a:hover::after,
+.prose h3 a:hover::after {
+  content: ' #';
+  @apply text-faint;
+}
+.prose p,
+.prose li {
+  @apply text-fg;
+}
+.prose ul {
+  @apply list-disc pl-5;
+}
+.prose ol {
+  @apply list-decimal pl-5;
+}
+.prose li + li {
+  margin-top: 0.4em;
+}
+.prose li::marker {
+  @apply text-faint;
+}
+.prose strong {
+  @apply font-semibold;
+}
+.prose blockquote {
+  @apply border-line text-muted border-l-2 pl-4;
+}
+.prose hr {
+  @apply border-line my-10;
+}
+.prose img {
+  @apply rounded-md;
+}
+.prose table {
+  @apply my-6 block w-full overflow-x-auto text-sm;
+  border-collapse: collapse;
+}
+.prose th,
+.prose td {
+  @apply border-line border-b px-3 py-2 text-left align-top;
+}
+.prose th {
+  @apply text-muted text-xs font-medium tracking-wide uppercase;
+}
+.prose code {
+  @apply bg-soft rounded-sm px-1.5 py-0.5 font-mono text-[0.875em];
+}
+.prose pre code {
+  @apply bg-transparent p-0 text-sm;
+}
+
+/* rehype-pretty-code */
+.prose figure[data-rehype-pretty-code-figure] {
+  @apply my-6;
+}
+.prose figure[data-rehype-pretty-code-figure] pre {
+  @apply bg-soft overflow-x-auto rounded-md py-4;
+}
+.prose [data-rehype-pretty-code-title] {
+  @apply text-muted border-line bg-soft rounded-t-md border-b px-4 py-2 font-mono text-xs;
+}
+.prose [data-rehype-pretty-code-title] + pre {
+  @apply rounded-t-none;
+}
+.prose pre [data-line] {
+  @apply px-4;
+}
+.prose pre [data-highlighted-line] {
+  @apply bg-line;
+}
+
+/* 요약 블록 */
+.summary {
+  @apply border-line text-fg border-y py-4 text-[0.95rem] leading-relaxed;
+}
+.summary p {
+  margin: 0;
+}
+
+/* 검색 모달 */
+.search-dialog {
+  animation: search-in 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.search-dialog::backdrop {
+  background: rgb(20 20 18 / 0.3);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  animation: backdrop-in 220ms ease-out;
+}
+.search-dialog-closing {
+  animation: search-out 150ms ease-in forwards;
+}
+.search-dialog-closing::backdrop {
+  animation: backdrop-out 150ms ease-in forwards;
+}
+@keyframes search-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.97);
+  }
+}
+@keyframes search-out {
+  to {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+}
+@keyframes backdrop-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes backdrop-out {
+  to {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .search-dialog,
+  .search-dialog::backdrop,
+  .search-dialog-closing,
+  .search-dialog-closing::backdrop {
+    animation: none;
+  }
 }

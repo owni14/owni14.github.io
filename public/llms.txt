@@ -1,0 +1,15 @@
+# owni · 소프트웨어 개발자
+
+> 개발하면서 배운 것과 생각을 기록하는 블로그. 한국어.
+
+## 주요 페이지
+
+- [홈](https://owni14.github.io/): 소개, 경력, 최근 글
+- [Posts](https://owni14.github.io/posts): 전체 글 목록. 글 주소는 /posts/<category>/<subcategory>/<slug>
+- [Categories](https://owni14.github.io/categories): 카테고리와 소분류별 글 수
+
+## 기계용
+
+- [sitemap.xml](https://owni14.github.io/sitemap.xml)
+- [rss.xml](https://owni14.github.io/rss.xml)
+- [search-index.json](https://owni14.github.io/search-index.json): 글 제목·설명·본문 평문
