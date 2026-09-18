@@ -39,7 +39,7 @@ export function PostList({
             </p>
           )}
           <div className="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:gap-6">
-            <time dateTime={post.date} className="text-muted shrink-0 font-mono text-xs sm:w-24">
+            <time dateTime={post.date} className="text-muted shrink-0 font-mono text-xs sm:w-32">
               {formatDate(post.date)}
             </time>
             <Link href={post.permalink} className="group flex-1 no-underline">

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import { Giscus } from '@/components/giscus'
 import { JsonLd } from '@/components/json-ld'
 import { MDXContent } from '@/components/mdx'
+import { ReadingProgress } from '@/components/reading-progress'
 import { Toc } from '@/components/toc'
 import {
   adjacentPosts,
@@ -52,6 +53,7 @@ export default async function PostPage({ params }: PageProps<'/posts/[category]/
 
   return (
     <article className="pt-8">
+      <ReadingProgress targetId="post-body" />
       <JsonLd
         data={[
           blogPostingJsonLd(post),
@@ -92,11 +94,12 @@ export default async function PostPage({ params }: PageProps<'/posts/[category]/
         </h1>
       </header>
 
-      <div className="mt-10 lg:grid lg:grid-cols-[minmax(0,42rem)_1fr] lg:gap-12">
-        <div className="prose max-w-2xl">
+      {/* 목차는 본문 폭을 깎지 않도록 컨테이너 바깥 오른쪽 여백에 띄운다. 여백이 충분한 xl부터만 보인다. */}
+      <div className="relative mt-10">
+        <div id="post-body" className="prose max-w-2xl">
           <MDXContent code={post.body} />
         </div>
-        <aside className="hidden lg:block">
+        <aside className="absolute top-0 left-full hidden h-full w-60 pl-10 xl:block">
           <div className="sticky top-20">
             <Toc items={post.toc} />
           </div>

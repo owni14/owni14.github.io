@@ -1,5 +1,5 @@
 import { categoryLabel, posts, site, subcategoryLabel } from '@/lib/content'
-import { SITE_URL } from '@/lib/seo'
+import { SITE_DESCRIPTION, SITE_URL } from '@/lib/seo'
 
 export const dynamic = 'force-static'
 
@@ -27,7 +27,7 @@ export function GET() {
   <channel>
     <title>${escape(site.name)}</title>
     <link>${SITE_URL}</link>
-    <description>${escape(site.intro.split('\n')[0])}</description>
+    <description>${escape(SITE_DESCRIPTION)}</description>
     <language>ko</language>
     <lastBuildDate>${new Date(posts[0]?.date ?? Date.now()).toUTCString()}</lastBuildDate>
     <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml" />

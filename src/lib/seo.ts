@@ -1,8 +1,14 @@
 import { categoryLabel, site, subcategoryLabel, type Post } from '@/lib/content'
+import { stripEmphasis } from '@/lib/format'
 import type { Metadata } from 'next'
 
 export const SITE_URL = 'https://owni14.github.io'
-export const SITE_TITLE = `${site.name} · ${site.tagline}`
+/** 브라우저 탭 제목에 붙는 이름. 화면에 쓰는 '@owni14'에서 @를 뗀다. */
+const TITLE_NAME = site.name.replace(/^@/, '')
+/** 탭 제목은 어느 페이지든 '내용 | owni14' 꼴로, 이름이 항상 뒤에 온다. */
+export const SITE_TITLE = `${site.tagline} | ${TITLE_NAME}`
+/** 소개글 첫 줄. 검색 결과 설명과 RSS 채널 설명에 쓴다. */
+export const SITE_DESCRIPTION = stripEmphasis(site.intro.split('\n')[0])
 
 /**
  * Next 메타데이터는 중첩 객체(openGraph, alternates)를 병합하지 않고 하위 세그먼트 값으로 통째로 교체한다.
@@ -18,8 +24,8 @@ export const alternatesBase = { types: { 'application/rss+xml': '/rss.xml' } }
 
 export const baseMetadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: SITE_TITLE, template: `%s | ${site.name}` },
-  description: site.intro.split('\n')[0],
+  title: { default: SITE_TITLE, template: `%s | ${TITLE_NAME}` },
+  description: SITE_DESCRIPTION,
   openGraph: { ...openGraphBase, type: 'website' },
   twitter: { card: 'summary_large_image' },
   alternates: { ...alternatesBase, canonical: '/' },

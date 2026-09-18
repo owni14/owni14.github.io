@@ -1,6 +1,7 @@
 import { JsonLd } from '@/components/json-ld'
 import { PostList } from '@/components/post-list'
 import { formatPeriod, posts, site } from '@/lib/content'
+import { splitEmphasis } from '@/lib/format'
 import { personJsonLd, websiteJsonLd } from '@/lib/seo'
 import { Link } from 'next-view-transitions'
 
@@ -46,24 +47,12 @@ export default function HomePage() {
         <h1 className="sr-only">
           {site.name} · {site.tagline}
         </h1>
-        <p className="max-w-xl whitespace-pre-line">{site.intro.trim()}</p>
-        <ul className="text-muted mt-6 flex gap-5 text-sm" aria-label="링크">
-          <li>
-            <a href={site.links.github} rel="me noreferrer" target="_blank">
-              GitHub
-            </a>
-          </li>
-          {site.links.linkedin && (
-            <li>
-              <a href={site.links.linkedin} rel="me noreferrer" target="_blank">
-                LinkedIn
-              </a>
-            </li>
+        {/* site.yml에서 **이렇게** 감싼 부분은 굵게 나온다 */}
+        <p className="whitespace-pre-line">
+          {splitEmphasis(site.intro.trim()).map((part, i) =>
+            i % 2 ? <strong key={i}>{part}</strong> : part,
           )}
-          <li>
-            <a href={`mailto:${site.links.email}`}>Email</a>
-          </li>
-        </ul>
+        </p>
       </section>
 
       <Section id="experience" title="Experience">
@@ -71,32 +60,26 @@ export default function HomePage() {
           {site.experience.map((e) => (
             <li
               key={`${e.company}-${e.start}`}
-              className="grid gap-1 py-5 sm:grid-cols-[8rem_1fr] sm:gap-6"
+              className="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:gap-6"
             >
-              <span className="text-muted font-mono text-xs sm:pt-1">
+              <span className="text-muted shrink-0 font-mono text-xs whitespace-nowrap sm:w-32">
                 {formatPeriod(e.start, e.end)}
               </span>
-              <div>
-                <p className="font-medium">
-                  {e.role} ·{' '}
-                  {e.url ? (
-                    <a href={e.url} rel="noreferrer" target="_blank">
+              <p className="flex-1">
+                {e.url ? (
+                  <a href={e.url} rel="noreferrer" target="_blank" className="group no-underline">
+                    <span className="group-hover:decoration-fg underline decoration-transparent decoration-1 underline-offset-[3px] transition-colors">
                       {e.company}
-                    </a>
-                  ) : (
-                    e.company
-                  )}
-                  {e.location && <span className="text-faint font-normal"> · {e.location}</span>}
-                </p>
-                <p className="text-muted mt-1 text-sm">{e.summary}</p>
-                {e.highlights.length > 0 && (
-                  <ul className="text-muted mt-2 list-disc pl-5 text-sm">
-                    {e.highlights.map((h) => (
-                      <li key={h}>{h}</li>
-                    ))}
-                  </ul>
+                    </span>
+                  </a>
+                ) : (
+                  e.company
                 )}
-              </div>
+                <span className="text-muted mt-1 block text-sm">
+                  {e.role}
+                  {e.location && <span className="text-faint"> · {e.location}</span>}
+                </span>
+              </p>
             </li>
           ))}
         </ol>
@@ -104,13 +87,6 @@ export default function HomePage() {
 
       <Section id="posts" title="Recent Posts" more={{ href: '/posts', label: '전체 보기' }}>
         <PostList posts={recent} />
-      </Section>
-
-      <Section id="contact" title="Contact">
-        <p>
-          함께 일하거나 이야기 나누고 싶다면{' '}
-          <a href={`mailto:${site.links.email}`}>{site.links.email}</a>로 메일을 보내 주세요.
-        </p>
       </Section>
     </>
   )

@@ -2,7 +2,7 @@
 
 2026-09-14 · v6 · 1~2단계 구현 완료(로컬), 0단계 저장소 생성 대기
 
-> **2026-09-14 이후 변경(이 문서보다 우선)**: 프로젝트 섹션·`/projects` 라우트 제거, 블로그 주소 `/blog` → `/posts`, 분류는 카테고리 › 소분류 두 단계(`content/posts/<category>/<subcategory>/`, 정의는 `src/lib/categories.ts`), 태그 제거, 검색 모달과 `/search-index.json` 추가, RSS 구현. 아래 본문의 `/blog`·`/projects`·태그 관련 기술은 당시 계획 기록이다. 현재 구조는 README를 따른다.
+> **2026-09-14 이후 변경(이 문서보다 우선)**: 프로젝트 섹션·`/projects` 라우트 제거, 블로그 주소 `/blog` → `/posts`, 분류는 카테고리 › 소분류 두 단계(`content/posts/<category>/<subcategory>/`, 정의는 `src/lib/categories.ts`), 태그 제거, 검색 모달과 `/search-index.json` 추가, RSS 구현. 아래 본문의 `/blog`·`/projects`·태그 관련 기술은 당시 계획 기록이다. 폰트는 Pretendard(직접 서빙) → Noto Sans KR(`next/font/google`, 빌드 시 자체 호스팅)로 교체, `public/fonts/`·`src/app/fonts.css` 삭제. 현재 구조는 README를 따른다.
 
 ## 1. 목표
 

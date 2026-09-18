@@ -69,8 +69,6 @@ const site = defineCollection({
         start: s.string(),
         end: s.string().optional(),
         location: s.string().optional(),
-        summary: s.string(),
-        highlights: s.array(s.string()).default([]),
       }),
     ),
   }),

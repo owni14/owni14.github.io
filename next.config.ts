@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next'
 
-const isDev = process.argv.includes('dev')
+// Next 16부터 dev 서버는 별도 프로세스에서 설정을 읽어 argv에 'dev'가 없다. build는 여전히 argv에 남는다.
+const isDev = process.env.NODE_ENV === 'development'
 const isBuild = process.argv.includes('build')
 
 const nextConfig: NextConfig = {

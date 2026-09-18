@@ -5,7 +5,7 @@ import { Link } from 'next-view-transitions'
 
 export function Header() {
   return (
-    <header className="mx-auto flex w-full max-w-3xl items-center justify-between px-5 pt-14 pb-2 sm:pt-24">
+    <header className="mx-auto flex w-full max-w-3xl items-center justify-between px-5 pt-8 pb-2 sm:pt-14">
       <Link href="/" className="font-bold no-underline">
         {site.name}
       </Link>
