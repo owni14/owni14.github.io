@@ -1,8 +1,8 @@
 name: 'owni14'
 tagline: Product Engineer
 intro: |
-  제품을 만들고 운영하는 개발자입니다. 요즘은 SNAPGOAL에서 아마추어 축구팀이 경기 영상을 보고 공유하는 데 필요한 기능을 만들고 있습니다.
-  기능을 내보내고 나면 사람들이 어디서 헤매고 얼마나 기다리는지 봅니다. 버튼 하나를 고칠 때도 있고, 영상을 처리하는 방식부터 다시 볼 때도 있습니다.
+  프론트엔드 개발자로 일을 시작했고, 지금은 SNAPGOAL을 만들면서 서버와 영상 처리, 배포까지 맡고 있습니다.
+  새 기능을 만들 때는 지금 필요한 만큼만 만들려고 합니다. 나중에 요구사항이 바뀌었을 때 어디를 고치면 되는지 바로 알 수 있는 구조를 좋아합니다.
 links:
   github: https://github.com/owni14
   linkedin: https://www.linkedin.com/in/minwoo-kim-25898b244/
