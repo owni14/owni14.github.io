@@ -1,8 +1,8 @@
 name: 'owni14'
 tagline: Product Engineer
 intro: |
-  SNAPGOAL을 공동창업하고, 아마추어 축구팀과 선수들이 경기 영상에서 하이라이트를 쉽게 만들 수 있도록 돕는 **Product Engineer**입니다.
-  영상 업로드부터 AI 하이라이트 생성과 재생까지, 이 과정에 필요한 웹·모바일 앱과 영상 처리 시스템을 직접 만들고 운영합니다.
+  사용자가 하려는 일에서 출발해, 제품을 직접 만들고 운영하는 **Product Engineer**입니다.
+  기능을 만들 때는 사용자가 헤매는 지점과 기다리는 시간을 살핍니다. 화면의 사용 흐름부터 그 뒤의 시스템까지, 실제로 쓰기 편하고 운영하기 좋은 구조를 고민합니다.
 links:
   github: https://github.com/owni14
   linkedin: https://www.linkedin.com/in/minwoo-kim-25898b244/
