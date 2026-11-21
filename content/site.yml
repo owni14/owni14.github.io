@@ -1,8 +1,8 @@
 name: 'owni14'
 tagline: Product Engineer
 intro: |
-  사용자가 하려는 일에서 출발해, 제품을 직접 만들고 운영하는 **Product Engineer**입니다.
-  기능을 만들 때는 사용자가 헤매는 지점과 기다리는 시간을 살핍니다. 화면의 사용 흐름부터 그 뒤의 시스템까지, 실제로 쓰기 편하고 운영하기 좋은 구조를 고민합니다.
+  제품을 만들고 운영하는 개발자입니다. 요즘은 SNAPGOAL에서 아마추어 축구팀이 경기 영상을 보고 공유하는 데 필요한 기능을 만들고 있습니다.
+  기능을 내보내고 나면 사람들이 어디서 헤매고 얼마나 기다리는지 봅니다. 버튼 하나를 고칠 때도 있고, 영상을 처리하는 방식부터 다시 볼 때도 있습니다.
 links:
   github: https://github.com/owni14
   linkedin: https://www.linkedin.com/in/minwoo-kim-25898b244/
