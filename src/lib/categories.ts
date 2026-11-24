@@ -14,6 +14,8 @@ export const CATEGORIES = {
       javascript: 'JavaScript',
       typescript: 'TypeScript',
       css: 'CSS',
+      html: 'HTML',
+      react: 'React',
       browser: 'Browser',
       http: 'HTTP',
     },
@@ -22,9 +24,21 @@ export const CATEGORIES = {
     label: 'DevOps',
     subs: { 'ci-cd': 'CI/CD', docker: 'Docker', cloud: 'Cloud' },
   },
+  backend: {
+    label: 'Backend',
+    subs: { nodejs: 'Node.js', mongodb: 'MongoDB' },
+  },
+  algorithm: {
+    label: 'Algorithm',
+    subs: { programmers: '프로그래머스', leetcode: 'LeetCode' },
+  },
+  development: {
+    label: 'Development',
+    subs: { git: 'Git', general: 'General', troubleshooting: 'Troubleshooting' },
+  },
   personal: {
     label: 'Personal',
-    subs: { reflection: 'Reflection', career: 'Career' },
+    subs: { reflection: 'Reflection', career: 'Career', til: 'TIL' },
   },
 } as const satisfies Record<string, { label: string; subs: Record<string, string> }>
 

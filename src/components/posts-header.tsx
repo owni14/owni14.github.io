@@ -1,14 +1,15 @@
-import { Link } from 'next-view-transitions'
+import { Link } from '@/components/localized-link'
 import {
-  categories,
+  categoriesFor,
   categoryLabel,
-  posts,
+  getPosts,
   postsByCategory,
   postsBySubcategory,
   subcategories,
   subcategoryLabel,
   type Category,
 } from '@/lib/content'
+import { messages, type Locale } from '@/lib/i18n'
 
 function Chip({
   href,
@@ -42,25 +43,33 @@ function Chip({
 export function PostsHeader({
   category,
   subcategory,
+  locale = 'ko',
 }: {
   category?: Category
   subcategory?: string
+  locale?: Locale
 }) {
+  const t = messages[locale]
+  const categories = categoriesFor(locale)
+  const posts = getPosts(locale)
   const parents: { label: string; href: string }[] = []
-  let title = 'Posts'
+  let title: string = t.posts
   if (category) {
-    parents.push({ label: 'Posts', href: '/posts' })
+    parents.push({ label: t.posts, href: '/posts' })
     title = categoryLabel(category)
   }
   if (category && subcategory) {
     parents.push({ label: categoryLabel(category), href: `/posts/${category}` })
-    title = subcategoryLabel(category, subcategory)
+    title =
+      locale === 'en' && subcategory === 'programmers'
+        ? 'Programmers'
+        : subcategoryLabel(category, subcategory)
   }
 
   return (
     <header className="pt-8 pb-6">
       {parents.length > 0 && (
-        <nav aria-label="상위 분류" className="text-muted mb-2 font-mono text-xs">
+        <nav aria-label={t.parent} className="text-muted mb-2 font-mono text-xs">
           {parents.map((c, i) => (
             <span key={c.href}>
               {i > 0 && <span aria-hidden> › </span>}
@@ -74,34 +83,44 @@ export function PostsHeader({
       )}
       <h1 className="text-xl font-semibold">{title}</h1>
 
-      <nav aria-label={category ? '소분류' : '카테고리'} className="mt-6 flex flex-wrap gap-2">
+      <nav
+        aria-label={category ? t.subcategories : t.categories}
+        className="mt-6 flex flex-wrap gap-2"
+      >
         {category ? (
           <>
             <Chip
               href={`/posts/${category}`}
               active={!subcategory}
-              count={postsByCategory(category).length}
+              count={postsByCategory(category, locale).length}
             >
-              All
+              {t.all}
             </Chip>
-            {subcategories(category).map((s) => (
+            {subcategories(category, locale).map((s) => (
               <Chip
                 key={s}
                 href={`/posts/${category}/${s}`}
                 active={subcategory === s}
-                count={postsBySubcategory(category, s).length}
+                count={postsBySubcategory(category, s, locale).length}
               >
-                {subcategoryLabel(category, s)}
+                {locale === 'en' && s === 'programmers'
+                  ? 'Programmers'
+                  : subcategoryLabel(category, s)}
               </Chip>
             ))}
           </>
         ) : (
           <>
             <Chip href="/posts" active count={posts.length}>
-              All
+              {t.all}
             </Chip>
             {categories.map((c) => (
-              <Chip key={c} href={`/posts/${c}`} active={false} count={postsByCategory(c).length}>
+              <Chip
+                key={c}
+                href={`/posts/${c}`}
+                active={false}
+                count={postsByCategory(c, locale).length}
+              >
                 {categoryLabel(c)}
               </Chip>
             ))}

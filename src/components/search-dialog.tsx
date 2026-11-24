@@ -5,6 +5,9 @@ import { useCallback, useEffect, useId, useRef, useState } from 'react'
 import { categoryLabel, subcategoryLabel, type Category } from '@/lib/categories'
 import { formatDate, transitionName } from '@/lib/format'
 
+import { useLocale } from '@/components/locale-provider'
+import { messages, localizedPath, formatLocalizedDate, type Locale } from '@/lib/i18n'
+
 type IndexEntry = {
   title: string
   description: string
@@ -16,13 +19,13 @@ type IndexEntry = {
   plain: string
 }
 
-let indexPromise: Promise<IndexEntry[]> | null = null
-function loadIndex() {
-  indexPromise ??= fetch('/search-index.json').then((r) => {
+const indexPromises: Partial<Record<Locale, Promise<IndexEntry[]>>> = {}
+function loadIndex(locale: Locale) {
+  indexPromises[locale] ??= fetch(localizedPath('/search-index.json', locale)).then((r) => {
     if (!r.ok) throw new Error(`search index ${r.status}`)
     return r.json() as Promise<IndexEntry[]>
   })
-  return indexPromise
+  return indexPromises[locale]!
 }
 
 function matches(entry: IndexEntry, terms: string[]) {
@@ -40,6 +43,8 @@ function matches(entry: IndexEntry, terms: string[]) {
 
 /** 헤더 돋보기 버튼 + 화면 중앙에 뜨는 검색 모달. ⌘K / Ctrl+K / `/` 로도 연다. */
 export function SearchDialog() {
+  const locale = useLocale()
+  const t = messages[locale]
   const dialogRef = useRef<HTMLDialogElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -63,11 +68,11 @@ export function SearchDialog() {
     d.showModal()
     requestAnimationFrame(() => inputRef.current?.select())
     if (!index && !error) {
-      loadIndex()
+      loadIndex(locale)
         .then(setIndex)
         .catch(() => setError(true))
     }
-  }, [index, error])
+  }, [index, error, locale])
 
   const hide = useCallback(() => {
     const d = dialogRef.current
@@ -149,8 +154,8 @@ export function SearchDialog() {
         ref={buttonRef}
         type="button"
         onClick={show}
-        aria-label="검색"
-        title="검색 (⌘K)"
+        aria-label={t.search}
+        title={`${t.search} (⌘K)`}
         className="text-muted hover:text-fg -mr-2 flex h-8 w-8 items-center justify-center rounded-md transition-colors"
       >
         <SearchIcon />
@@ -165,7 +170,7 @@ export function SearchDialog() {
         onClick={(e) => {
           if (e.target === e.currentTarget) hide()
         }}
-        aria-label="글 검색"
+        aria-label={t.searchPosts}
         className={`search-dialog bg-bg border-line fixed inset-x-0 top-[12vh] mx-auto my-0 w-[calc(100%-2rem)] max-w-xl rounded-xl border p-0 shadow-2xl outline-none ${
           closing ? 'search-dialog-closing' : ''
         }`}
@@ -185,7 +190,7 @@ export function SearchDialog() {
                   setCursor(0)
                 }}
                 onKeyDown={onInputKey}
-                placeholder="제목, 본문, 분류로 검색"
+                placeholder={t.placeholder}
                 autoComplete="off"
                 spellCheck={false}
                 role="combobox"
@@ -201,16 +206,16 @@ export function SearchDialog() {
 
             <div className="overflow-y-auto overscroll-contain">
               {error ? (
-                <p className="text-muted px-4 py-8 text-sm">검색 인덱스를 불러오지 못했습니다.</p>
+                <p className="text-muted px-4 py-8 text-sm">{t.searchError}</p>
               ) : !index ? (
-                <p className="text-muted px-4 py-8 text-sm">불러오는 중…</p>
+                <p className="text-muted px-4 py-8 text-sm">{t.loading}</p>
               ) : results.length === 0 ? (
-                <p className="text-muted px-4 py-8 text-sm">검색 결과가 없습니다.</p>
+                <p className="text-muted px-4 py-8 text-sm">{t.noResults}</p>
               ) : (
                 <ul ref={listRef} id={listId} role="listbox" className="py-2">
                   {!searching && (
                     <li className="text-faint px-4 pt-1 pb-2 font-mono text-[0.7rem] tracking-wide uppercase">
-                      최근 글
+                      {t.recent}
                     </li>
                   )}
                   {results.map((r, i) => {
@@ -232,7 +237,13 @@ export function SearchDialog() {
                           </span>
                           <span className="text-faint shrink-0 font-mono text-xs">
                             {categoryLabel(r.category)} ›{' '}
-                            {subcategoryLabel(r.category, r.subcategory)} · {formatDate(r.date)}
+                            {locale === 'en' && r.subcategory === 'programmers'
+                              ? 'Programmers'
+                              : subcategoryLabel(r.category, r.subcategory)}{' '}
+                            ·{' '}
+                            {locale === 'en'
+                              ? formatLocalizedDate(r.date, locale)
+                              : formatDate(r.date)}
                           </span>
                         </div>
                         <p className="text-muted mt-0.5 truncate text-xs">
@@ -246,9 +257,9 @@ export function SearchDialog() {
             </div>
 
             <div className="border-line text-faint flex gap-4 border-t px-4 py-2 font-mono text-[0.7rem]">
-              <span>↑↓ 이동</span>
-              <span>↵ 열기</span>
-              <span>esc 닫기</span>
+              <span>↑↓ {t.move}</span>
+              <span>↵ {t.open}</span>
+              <span>esc {t.close}</span>
             </div>
           </div>
         )}

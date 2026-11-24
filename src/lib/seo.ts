@@ -1,4 +1,5 @@
-import { categoryLabel, site, subcategoryLabel, type Post } from '@/lib/content'
+import { localizedPath, type Locale } from '@/lib/i18n'
+import { categoryLabel, site, getSite, getPosts, subcategoryLabel, type Post } from '@/lib/content'
 import { stripEmphasis } from '@/lib/format'
 import type { Metadata } from 'next'
 
@@ -31,40 +32,53 @@ export const baseMetadata: Metadata = {
   alternates: { ...alternatesBase, canonical: '/' },
 }
 
-export const pageMetadata = (title: string, description: string, path: string): Metadata => ({
+export const pageMetadata = (
+  title: string,
+  description: string,
+  path: string,
+  locale: Locale = 'ko',
+): Metadata => ({
   title,
   description,
-  alternates: { ...alternatesBase, canonical: path },
-  openGraph: { ...openGraphBase, type: 'website', title, description, url: path },
+  alternates: alternates(path, locale),
+  openGraph: {
+    ...openGraphBase,
+    locale: locale === 'en' ? 'en_US' : 'ko_KR',
+    alternateLocale: locale === 'en' ? 'ko_KR' : 'en_US',
+    type: 'website',
+    title,
+    description,
+    url: localizedPath(path, locale),
+  },
 })
 
-export const personJsonLd = () => ({
+export const personJsonLd = (locale: Locale = 'ko') => ({
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: site.name,
-  jobTitle: site.tagline,
+  jobTitle: getSite(locale).tagline,
   url: SITE_URL,
   email: `mailto:${site.links.email}`,
   sameAs: [site.links.github, site.links.linkedin].filter(Boolean),
 })
 
-export const websiteJsonLd = () => ({
+export const websiteJsonLd = (locale: Locale = 'ko') => ({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: site.name,
   url: SITE_URL,
-  inLanguage: 'ko',
+  inLanguage: locale,
   author: { '@type': 'Person', name: site.name, url: SITE_URL },
 })
 
-export const blogPostingJsonLd = (post: Post) => ({
+export const blogPostingJsonLd = (post: Post, locale: Locale = 'ko') => ({
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: post.title,
   description: post.description,
   datePublished: post.date,
   dateModified: post.updated ?? post.date,
-  inLanguage: 'ko',
+  inLanguage: locale,
   url: `${SITE_URL}${post.permalink}`,
   mainEntityOfPage: `${SITE_URL}${post.permalink}`,
   articleSection: categoryLabel(post.category),
@@ -82,3 +96,46 @@ export const breadcrumbJsonLd = (items: { name: string; path: string }[]) => ({
     item: `${SITE_URL}${item.path}`,
   })),
 })
+
+export function alternates(path: string, locale: Locale) {
+  const article = path.split('/').length === 5 && path.startsWith('/posts/')
+  const languages: Record<string, string> = {}
+  for (const language of ['ko', 'en'] as Locale[]) {
+    if (!article || getPosts(language).some((p) => p.originalPath === path))
+      languages[language] = localizedPath(path, language)
+  }
+  languages['x-default'] = languages.ko ?? languages.en
+  return {
+    canonical: localizedPath(path, locale),
+    languages,
+    types: { 'application/rss+xml': localizedPath('/rss.xml', locale) },
+  }
+}
+
+export function rootMetadata(locale: Locale): Metadata {
+  const profile = getSite(locale)
+  return {
+    ...baseMetadata,
+    title: { default: `${profile.tagline} | ${TITLE_NAME}`, template: `%s | ${TITLE_NAME}` },
+    description: stripEmphasis(profile.intro.split('\n')[0]),
+    alternates: alternates('/', locale),
+    openGraph: { ...openGraphBase, type: 'website', locale: locale === 'en' ? 'en_US' : 'ko_KR' },
+  }
+}
+
+export function postMetadata(post: Post, locale: Locale): Metadata {
+  return {
+    ...pageMetadata(post.title, post.description, post.originalPath, locale),
+    openGraph: {
+      ...openGraphBase,
+      locale: locale === 'en' ? 'en_US' : 'ko_KR',
+      type: 'article',
+      title: post.title,
+      description: post.description,
+      url: post.permalink,
+      publishedTime: post.date,
+      modifiedTime: post.updated ?? post.date,
+      section: categoryLabel(post.category),
+    },
+  }
+}

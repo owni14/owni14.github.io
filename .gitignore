@@ -44,3 +44,6 @@ next-env.d.ts
 .velite
 /public/static
 !.env.example
+
+/.Codex/learn/
+/.claude/learn/

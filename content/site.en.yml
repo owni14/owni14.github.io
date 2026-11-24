@@ -1,0 +1,22 @@
+name: 'owni14'
+tagline: Software Developer
+intro: |
+  I'm a **Product Engineer focused on understanding users’ problems and building products that solve them.**
+  I work primarily on the frontend, but also across backend and infrastructure—**wherever the product needs me.**
+  I write about what I learn and experience as a developer, along with reflections on work and everyday life.
+links:
+  github: https://github.com/owni14
+  linkedin: https://www.linkedin.com/in/minwoo-kim-25898b244/
+  email: kmwoo514@gmail.com
+experience:
+  - company: SNAPGOAL
+    url: https://snapgoal.io/
+    role: Co-Founder / CTO
+    start: 2025-05
+    location: Seoul
+  - company: Embrace
+    url: https://embracelabs.com/
+    role: Frontend Developer
+    start: 2023-04
+    end: 2025-04
+    location: Seoul
