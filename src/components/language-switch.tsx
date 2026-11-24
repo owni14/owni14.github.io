@@ -18,7 +18,10 @@ export function LanguageSwitch() {
   const article = base.startsWith('/posts/') && base.split('/').length === 5
   const available = availablePaths.includes(base)
   const destination =
-    !article && base.startsWith('/posts/') && !availablePaths.some((p) => p.startsWith(base + '/'))
+    (article && !available) ||
+    (!article &&
+      base.startsWith('/posts/') &&
+      !availablePaths.some((p) => p.startsWith(base + '/')))
       ? localizedPath('/posts', next)
       : localizedPath(pathname, next)
   return (
@@ -29,13 +32,7 @@ export function LanguageSwitch() {
     >
       {(['ko', 'en'] as Locale[]).map((language) => {
         const selected = language === locale
-        const unavailable = !selected && article && !available
         const name = language === 'ko' ? '한국어' : 'English'
-        const title = unavailable
-          ? locale === 'ko'
-            ? '아직 영어 글이 없습니다'
-            : 'No Korean version yet'
-          : name
         return (
           <button
             key={language}
@@ -43,17 +40,14 @@ export function LanguageSwitch() {
             lang={language}
             aria-label={name}
             aria-pressed={selected}
-            disabled={unavailable}
-            title={title}
+            title={name}
             className={`h-7 min-w-9 rounded-full px-2 font-mono text-[11px] leading-none font-medium tracking-wide transition-colors motion-reduce:transition-none ${
               selected
                 ? 'bg-bg text-fg shadow-[0_1px_3px_rgb(26_26_24/0.08)]'
-                : unavailable
-                  ? 'text-faint cursor-not-allowed opacity-60'
-                  : 'text-muted hover:text-fg hover:bg-bg/50'
+                : 'text-muted hover:text-fg hover:bg-bg/50'
             }`}
             onClick={() => {
-              if (selected || unavailable) return
+              if (selected) return
               window.location.assign(destination + window.location.search)
             }}
           >
