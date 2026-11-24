@@ -1,12 +1,15 @@
 'use client'
 
-import { Link } from 'next-view-transitions'
+import { Link } from '@/components/localized-link'
 import { usePathname } from 'next/navigation'
 import type { ReactNode } from 'react'
+import { useLocale } from '@/components/locale-provider'
+import { localizedPath } from '@/lib/i18n'
 
 export function NavLink({ href, children }: { href: string; children: ReactNode }) {
   const pathname = usePathname()
-  const active = pathname === href || pathname.startsWith(`${href}/`)
+  const local = localizedPath(href, useLocale())
+  const active = pathname === local || pathname.startsWith(`${local}/`)
   return (
     <Link
       href={href}

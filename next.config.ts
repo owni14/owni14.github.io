@@ -5,7 +5,8 @@ const isDev = process.env.NODE_ENV === 'development'
 const isBuild = process.argv.includes('build')
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // Static export validation is for production; dev resolves encoded Unicode slugs at request time.
+  output: isDev ? undefined : 'export',
   trailingSlash: false,
   images: { unoptimized: true },
 }

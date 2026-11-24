@@ -1,6 +1,7 @@
-import { Link } from 'next-view-transitions'
+import { Link } from '@/components/localized-link'
 import { categoryLabel, subcategoryLabel, type Category } from '@/lib/categories'
 import { formatDate, transitionName } from '@/lib/format'
+import { messages, formatLocalizedDate, type Locale } from '@/lib/i18n'
 
 export type PostListItem = {
   title: string
@@ -15,14 +16,16 @@ export type PostListItem = {
 export function PostList({
   posts,
   showYear = false,
-  emptyMessage = '아직 글이 없습니다.',
+  emptyMessage,
+  locale = 'ko',
 }: {
   posts: PostListItem[]
   showYear?: boolean
   emptyMessage?: string
+  locale?: Locale
 }) {
   if (posts.length === 0) {
-    return <p className="text-muted">{emptyMessage}</p>
+    return <p className="text-muted">{emptyMessage ?? messages[locale].empty}</p>
   }
   const rows = posts.map((post, i) => {
     const year = post.date.slice(0, 4)
@@ -40,7 +43,7 @@ export function PostList({
           )}
           <div className="flex flex-col gap-1 py-4 sm:flex-row sm:items-baseline sm:gap-6">
             <time dateTime={post.date} className="text-muted shrink-0 font-mono text-xs sm:w-32">
-              {formatDate(post.date)}
+              {locale === 'en' ? formatLocalizedDate(post.date, locale) : formatDate(post.date)}
             </time>
             <Link href={post.permalink} className="group flex-1 no-underline">
               <span
@@ -63,7 +66,9 @@ export function PostList({
                 href={`/posts/${post.category}/${post.subcategory}`}
                 className="text-faint hover:text-muted no-underline"
               >
-                {subcategoryLabel(post.category, post.subcategory)}
+                {locale === 'en' && post.subcategory === 'programmers'
+                  ? 'Programmers'
+                  : subcategoryLabel(post.category, post.subcategory)}
               </Link>
             </span>
           </div>

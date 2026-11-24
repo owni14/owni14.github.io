@@ -1,5 +1,8 @@
 'use client'
 
+import { useLocale } from '@/components/locale-provider'
+import { messages } from '@/lib/i18n'
+
 import type { Post } from '@/lib/content'
 import { useEffect, useState } from 'react'
 
@@ -47,6 +50,7 @@ function TocList({
 }
 
 export function Toc({ items }: { items: Entry[] }) {
+  const t = messages[useLocale()]
   const [activeUrl, setActiveUrl] = useState<string | null>(null)
 
   useEffect(() => {
@@ -88,8 +92,8 @@ export function Toc({ items }: { items: Entry[] }) {
 
   if (items.length === 0) return null
   return (
-    <nav aria-label="목차" className="text-sm">
-      <p className="text-faint mb-2 font-mono text-xs">목차</p>
+    <nav aria-label={t.toc} className="text-sm">
+      <p className="text-faint mb-2 font-mono text-xs">{t.toc}</p>
       <TocList items={items} activeUrl={activeUrl} />
     </nav>
   )

@@ -1,3 +1,4 @@
+import { messages, type Locale } from '@/lib/i18n'
 import type { ReactNode } from 'react'
 
 type Links = { github: string; linkedin?: string; email: string }
@@ -66,15 +67,20 @@ export function SocialLinks({
   links,
   rssHref,
   className = '',
+  locale = 'ko',
 }: {
   links: Links
   rssHref?: string
   className?: string
+  locale?: Locale
 }) {
   return (
-    <ul className={`flex items-center leading-none ${className}`} aria-label="링크">
+    <ul
+      className={`flex items-center leading-none ${className}`}
+      aria-label={messages[locale].links}
+    >
       <li>
-        <IconLink href={`mailto:${links.email}`} label={`이메일 ${links.email}`}>
+        <IconLink href={`mailto:${links.email}`} label={`${messages[locale].email} ${links.email}`}>
           <MailIcon />
         </IconLink>
       </li>
@@ -92,7 +98,7 @@ export function SocialLinks({
       )}
       {rssHref && (
         <li>
-          <IconLink href={rssHref} label="RSS 피드">
+          <IconLink href={rssHref} label={messages[locale].rss}>
             <RssIcon />
           </IconLink>
         </li>

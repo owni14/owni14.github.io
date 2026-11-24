@@ -1,10 +1,14 @@
 'use client'
 
+import { useLocale } from '@/components/locale-provider'
+import { messages } from '@/lib/i18n'
+
 import { useEffect, useState } from 'react'
 
 const THRESHOLD = 480
 
 export function ScrollTop() {
+  const t = messages[useLocale()]
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -33,7 +37,7 @@ export function ScrollTop() {
     <button
       type="button"
       onClick={toTop}
-      aria-label="맨 위로"
+      aria-label={t.top}
       tabIndex={visible ? 0 : -1}
       className={`bg-bg border-line text-muted hover:text-fg hover:bg-soft fixed right-5 bottom-5 z-10 flex h-10 w-10 items-center justify-center rounded-full border shadow-sm transition duration-300 ease-out hover:scale-110 hover:shadow-md active:scale-95 sm:right-10 sm:bottom-10 ${
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'

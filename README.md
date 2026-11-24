@@ -42,3 +42,5 @@ draft: false
 `main`에 푸시하면 GitHub Actions가 빌드해 GitHub Pages로 배포한다. 검색 인덱스(`/search-index.json`), RSS(`/rss.xml`), 사이트맵, robots는 빌드 때 생성된다.
 
 계획서: `docs/PLAN.md`
+
+이전 Jekyll 글의 이전 내역과 주소 대응: [docs/migrations/jekyll.md](docs/migrations/jekyll.md).
